@@ -13426,7 +13426,7 @@ footer {
     bottom: 0;
     right: 0;
     width: 100%;
-    padding: 50px 0 70px 20px; }
+    padding: 50px 0 10px 20px; }
   .mil-product-carousel-position-right .mil-product-carousel-bg {
     position: relative;
     width: 100%;
@@ -13450,7 +13450,7 @@ footer {
       right: 40px; }
     .mil-product-carousel-position-right .mil-product-carousel-container {
       width: 100%;
-      padding: 75px 0 75px 40px; }
+      padding: 75px 0 15px 40px; }
     .mil-product-carousel-position-right .mil-product-carousel-bg {
       height: 765px;
       margin-bottom: 0;
@@ -13469,7 +13469,7 @@ footer {
       right: 45px; }
     .mil-product-carousel-position-right .mil-product-carousel-container {
       width: calc(100% - 140px);
-      padding: 65px 0 90px 80px; }
+      padding: 65px 0 30px 80px; }
     .mil-product-carousel-position-right .mil-product-carousel-bg {
       background-image: url(../images/carousel-woman.jpg);
       width: calc(100% - 300px);
@@ -13488,7 +13488,7 @@ footer {
       right: 45px; }
     .mil-product-carousel-position-right .mil-product-carousel-container {
       width: calc(100% - 180px);
-      padding: 75px 0 110px 80px; }
+      padding: 75px 0 50px 80px; }
     .mil-product-carousel-position-right .mil-product-carousel-bg {
       width: calc(100% - 180px);
       height: 630px;
@@ -13506,7 +13506,7 @@ footer {
       right: 45px; }
     .mil-product-carousel-position-right .mil-product-carousel-container {
       width: calc(100% - 260px);
-      padding: 90px 0 135px 80px; }
+      padding: 90px 0 75px 80px; }
     .mil-product-carousel-position-right .mil-product-carousel-bg {
       width: calc(100% - 210px);
       height: 755px;
@@ -13524,7 +13524,7 @@ footer {
       right: 45px; }
     .mil-product-carousel-position-right .mil-product-carousel-container {
       width: calc(100% - 260px);
-      padding: 90px 0 135px 80px; }
+      padding: 90px 0 75px 80px; }
     .mil-product-carousel-position-right .mil-product-carousel-bg {
       width: calc(100% - 485px);
       height: 755px;
@@ -13554,7 +13554,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 50px 0 70px 20px; }
+    padding: 50px 0 10px 20px; }
   .mil-product-carousel-position-left .mil-product-carousel-bg {
     position: relative;
     width: 100%;
@@ -13578,7 +13578,7 @@ footer {
       right: 40px; }
     .mil-product-carousel-position-left .mil-product-carousel-container {
       width: 100%;
-      padding: 75px 0 75px 40px; }
+      padding: 75px 0 15px 40px; }
     .mil-product-carousel-position-left .mil-product-carousel-bg {
       height: 765px;
       margin-bottom: 0;
@@ -13598,7 +13598,7 @@ footer {
       left: 45px; }
     .mil-product-carousel-position-left .mil-product-carousel-container {
       width: calc(100% - 140px);
-      padding: 65px 80px 90px 0; }
+      padding: 65px 80px 30px 0; }
       .mil-product-carousel-position-left .mil-product-carousel-container .slick-track {
         left: 80px; }
     .mil-product-carousel-position-left .mil-product-carousel-bg {
@@ -13619,7 +13619,7 @@ footer {
       left: 45px; }
     .mil-product-carousel-position-left .mil-product-carousel-container {
       width: calc(100% - 180px);
-      padding: 75px 80px 110px 0; }
+      padding: 75px 80px 50px 0; }
       .mil-product-carousel-position-left .mil-product-carousel-container .slick-track {
         left: 80px; }
     .mil-product-carousel-position-left .mil-product-carousel-bg {
@@ -13639,7 +13639,7 @@ footer {
       left: 45px; }
     .mil-product-carousel-position-left .mil-product-carousel-container {
       width: calc(100% - 260px);
-      padding: 90px 80px 135px 0; }
+      padding: 90px 80px 75px 0; }
       .mil-product-carousel-position-left .mil-product-carousel-container .slick-track {
         left: 80px; }
     .mil-product-carousel-position-left .mil-product-carousel-bg {
@@ -13659,7 +13659,7 @@ footer {
       left: 45px; }
     .mil-product-carousel-position-left .mil-product-carousel-container {
       width: calc(100% - 260px);
-      padding: 90px 80px 135px 0; }
+      padding: 90px 80px 75px 0; }
       .mil-product-carousel-position-left .mil-product-carousel-container .slick-track {
         left: 80px; }
     .mil-product-carousel-position-left .mil-product-carousel-bg {
@@ -13758,9 +13758,53 @@ footer {
 .mil-product-preview-item {
   position: relative;
   width: 183px;
+  max-width: 183px;
   height: 292px;
   text-decoration: none;
   color: initial; }
+  .mil-product-preview-item-sizes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    line-height: 26px;
+    opacity: 0;
+    transition: opacity linear 300ms; }
+    .mil-product-preview-item-sizes li {
+      width: 28px;
+      height: 28px;
+      border: 1px solid #000000;
+      text-align: center;
+      margin-right: 3px;
+      margin-bottom: 3px; }
+      .mil-product-preview-item-sizes li.disable {
+        border-color: #b1b1b9;
+        color: #b1b1b9;
+        position: relative; }
+        .mil-product-preview-item-sizes li.disable:before {
+          content: "";
+          display: block;
+          width: 1px;
+          height: 37px;
+          background-color: #b1b1b9;
+          position: absolute;
+          top: -5px;
+          left: 13px;
+          transform: rotate(-45deg); }
+        .mil-product-preview-item-sizes li.disable:after {
+          content: "";
+          display: block;
+          width: 1px;
+          height: 37px;
+          background-color: #b1b1b9;
+          position: absolute;
+          top: -5px;
+          left: 12px;
+          transform: rotate(45deg); }
+  .mil-product-preview-item:hover .mil-product-preview-item-sizes {
+    opacity: 1; }
   .mil-product-preview-item-img {
     position: relative;
     background: no-repeat center center;
@@ -13799,23 +13843,24 @@ footer {
     font-weight: normal;
     font-size: 13px;
     line-height: 18px; }
-  .mil-product-preview-item .mil-product-carousel-item-price {
-    margin-bottom: 0;
+  .mil-product-preview-item .mil-product-preview-item-price {
+    margin-bottom: 20px;
+    height: 28px;
     display: flex;
     align-items: center; }
-    .mil-product-preview-item .mil-product-carousel-item-price * {
+    .mil-product-preview-item .mil-product-preview-item-price * {
       margin-right: 15px; }
-    .mil-product-preview-item .mil-product-carousel-item-price span {
+    .mil-product-preview-item .mil-product-preview-item-price span {
       font-family: 'montserratmedium';
       font-weight: normal;
       font-size: 17px;
       line-height: 20px; }
-    .mil-product-preview-item .mil-product-carousel-item-price s {
+    .mil-product-preview-item .mil-product-preview-item-price s {
       font-family: 'montserratregular';
       font-weight: normal;
       font-size: 14px;
       line-height: 18px; }
-    .mil-product-preview-item .mil-product-carousel-item-price .badge {
+    .mil-product-preview-item .mil-product-preview-item-price .badge {
       border-radius: 0;
       font-family: 'montserratregular';
       font-weight: normal;
@@ -13827,7 +13872,8 @@ footer {
 @media (min-width: 768px) {
   .mil-product-preview-item {
     width: 290px;
-    height: 460px; }
+    max-width: 290px;
+    height: 520px; }
     .mil-product-preview-item-img {
       width: 290px;
       height: 361px;
@@ -13836,7 +13882,7 @@ footer {
 @media (min-width: 992px) {
   .mil-product-preview-item {
     width: 290px;
-    height: 460px; }
+    height: 520px; }
     .mil-product-preview-item-img {
       width: 290px;
       height: 361px;
@@ -13845,7 +13891,7 @@ footer {
 @media (min-width: 1200px) {
   .mil-product-preview-item {
     width: 290px;
-    height: 460px; }
+    height: 520px; }
     .mil-product-preview-item-img {
       width: 290px;
       height: 361px;
@@ -13854,7 +13900,7 @@ footer {
 @media (min-width: 1400px) {
   .mil-product-preview-item {
     width: 290px;
-    height: 460px; }
+    height: 520px; }
     .mil-product-preview-item-img {
       width: 290px;
       height: 361px;
@@ -13863,7 +13909,7 @@ footer {
 @media (min-width: 1600px) {
   .mil-product-preview-item {
     width: 290px;
-    height: 460px; }
+    height: 520px; }
     .mil-product-preview-item-img {
       width: 290px;
       height: 361px;
@@ -13874,6 +13920,9 @@ footer {
   font-size: 12px;
   line-height: 15px;
   padding: 9px; }
+  .btn-outline-primary {
+    border-color: #000000;
+    color: #000000; }
 
 @media (min-width: 768px) {
   .btn {
@@ -13933,6 +13982,165 @@ footer {
     font-size: 71px; }
   .h2 {
     font-size: 60px; } }
+
+.mil-instagram-section {
+  background-color: #f6f6f8;
+  padding-top: 50px;
+  position: relative;
+  direction: rtl;
+  overflow: hidden; }
+
+.mil-instagram-right-container-top, .mil-instagram-right-container-bottom {
+  text-align: center;
+  display: flex;
+  direction: ltr;
+  justify-content: center;
+  width: 100%; }
+
+.mil-instagram-right-container-top {
+  padding-bottom: 35px; }
+
+.mil-instagram-right-container-bottom {
+  background-color: #ffffff;
+  padding: 45px 20px 55px 20px; }
+  .mil-instagram-right-container-bottom .btn {
+    width: 100%; }
+
+.mil-instagram-images-container {
+  width: 433px;
+  height: 212px; }
+  .mil-instagram-images-container img {
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 103px; }
+    .mil-instagram-images-container img:first-child {
+      width: 212px; }
+
+@media (min-width: 768px) {
+  .mil-instagram-images-container {
+    position: absolute;
+    right: 346px;
+    bottom: 112px;
+    width: 860px;
+    height: 422px; }
+    .mil-instagram-images-container img {
+      width: 208px; }
+      .mil-instagram-images-container img:first-child {
+        width: 422px; }
+  .mil-instagram-right-container-top {
+    background-color: #ffffff;
+    height: 323px;
+    width: 727px;
+    padding-bottom: 50px;
+    padding-left: 381px; }
+  .mil-instagram-right-container-bottom {
+    height: calc(602px - 323px);
+    width: 727px;
+    padding: 0 0 0 381px; }
+    .mil-instagram-right-container-bottom .btn {
+      width: auto; } }
+
+@media (min-width: 992px) {
+  .mil-instagram-images-container {
+    right: 350px;
+    bottom: 127px;
+    width: 920px;
+    height: 447px; }
+    .mil-instagram-images-container img {
+      width: 220px; }
+      .mil-instagram-images-container img:first-child {
+        width: 447px; }
+  .mil-instagram-right-container-top {
+    height: 337px;
+    width: 723px;
+    padding-left: 373px; }
+  .mil-instagram-right-container-bottom {
+    height: calc(668px - 337px);
+    width: 723px;
+    padding: 0 0 0 373px; } }
+
+@media (min-width: 1200px) {
+  .mil-instagram-images-container {
+    right: 418px;
+    bottom: 112px;
+    width: 810px;
+    height: 399px; }
+    .mil-instagram-images-container img {
+      width: 196px; }
+      .mil-instagram-images-container img:first-child {
+        width: 399px; }
+  .mil-instagram-right-container-top {
+    height: 340px;
+    width: 737px;
+    padding-bottom: 75px;
+    padding-left: 319px; }
+  .mil-instagram-right-container-bottom {
+    height: calc(597px - 340px);
+    width: 737px;
+    padding: 0 0 0 319px; } }
+
+@media (min-width: 1400px) {
+  .mil-instagram-images-container {
+    right: 431px;
+    bottom: 133px;
+    width: 1100px;
+    height: 517px; }
+    .mil-instagram-images-container img {
+      width: 255px; }
+      .mil-instagram-images-container img:first-child {
+        width: 517px; }
+  .mil-instagram-right-container-top {
+    height: 410px;
+    width: 862px;
+    padding-left: 431px; }
+  .mil-instagram-right-container-bottom {
+    height: 397px;
+    width: 862px;
+    padding: 0 0 0 431px; } }
+
+@media (min-width: 1600px) {
+  .mil-instagram-images-container {
+    right: 469px;
+    bottom: 148px;
+    width: 1200px;
+    height: 569px; }
+    .mil-instagram-images-container img {
+      width: 281px; }
+      .mil-instagram-images-container img:first-child {
+        width: 569px; }
+  .mil-instagram-right-container-top {
+    height: 410px;
+    width: 862px;
+    padding-left: 431px; }
+  .mil-instagram-right-container-bottom {
+    height: 397px;
+    width: 862px;
+    padding: 0 0 0 431px; } }
+
+.mil-feedback-section {
+  height: 376px;
+  background: url(../images/feedback-bg.jpg) no-repeat bottom center; }
+
+@media (min-width: 768px) {
+  .mil-feedback-section {
+    height: 413px; } }
+
+@media (min-width: 992px) {
+  .mil-feedback-section {
+    height: 270px; } }
+
+@media (min-width: 1200px) {
+  .mil-feedback-section {
+    height: 270px; } }
+
+@media (min-width: 1400px) {
+  .mil-feedback-section {
+    height: 270px; } }
+
+@media (min-width: 1600px) {
+  .mil-feedback-section {
+    height: 270px; } }
 
 html {
   height: 100%; }
