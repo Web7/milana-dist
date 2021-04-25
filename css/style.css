@@ -5043,19 +5043,20 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0;
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
+  font-size: 0.8125rem;
   list-style: none; }
 
 .breadcrumb-item + .breadcrumb-item {
-  padding-left: 0.5rem; }
+  padding-left: 10px; }
   .breadcrumb-item + .breadcrumb-item::before {
     float: left;
-    padding-right: 0.5rem;
-    color: #afafb9;
-    content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */; }
+    padding-right: 10px;
+    color: #000000;
+    content: var(--bs-breadcrumb-divider, "|") /* rtl: var(--bs-breadcrumb-divider, "|") */; }
 
 .breadcrumb-item.active {
-  color: #afafb9; }
+  color: #000000; }
 
 .pagination {
   display: flex;
