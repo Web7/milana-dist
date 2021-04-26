@@ -16322,6 +16322,10 @@ footer {
   .btn-outline-primary {
     border-color: #000000;
     color: #000000; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    border-color: #ffffff;
+    color: #8c2837;
+    background-color: #ffffff; }
 
 @media (min-width: 768px) {
   .btn {
