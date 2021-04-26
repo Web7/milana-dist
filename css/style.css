@@ -16782,7 +16782,6 @@ footer {
 
 .mil-instagram-section {
   background-color: #f6f6f8;
-  padding-top: 50px;
   position: relative;
   direction: rtl;
   overflow: hidden; }
@@ -16815,6 +16814,8 @@ footer {
       width: 212px; }
 
 @media (min-width: 768px) {
+  .mil-instagram-section {
+    padding-top: 50px; }
   .mil-instagram-images-container {
     position: absolute;
     right: 346px;
