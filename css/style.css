@@ -15408,7 +15408,7 @@ footer {
   .nav {
     line-height: 30px; }
   .mil-socials-container {
-    width: 75%; }
+    width: 46%; }
   .mil-margin-top-header {
     margin-top: 75px; }
   .mil-margin-left-side-menu {
@@ -16240,7 +16240,7 @@ footer {
     width: 241px; }
     .mil-main-center-carousel-section .slick-dots li.slick-active button {
       background-color: #000000; }
-    .mil-main-center-carousel-section .slick-dots li:hover button {
+    .mil-main-center-carousel-section .slick-dots li.slick-active:hover button {
       background-color: #8c2837; }
 
 .mil-main-center-carousel-item {
