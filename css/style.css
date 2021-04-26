@@ -17095,6 +17095,11 @@ footer {
 .slick-dotted.slick-slider {
   margin-bottom: 0; }
 
+.slick-dots button {
+  font-size: 0; }
+  .slick-dots button:before {
+    display: none; }
+
 .dropdown-city {
   color: #000000;
   font-family: 'montserratmedium';
