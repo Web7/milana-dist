@@ -538,7 +538,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "montserratregular";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5924,7 +5924,7 @@ textarea.form-control-lg {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "montserratregular";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6009,7 +6009,7 @@ textarea.form-control-lg {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "montserratregular";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -15948,6 +15948,7 @@ footer {
       height: 24px; }
 
 .favorites-check {
+  -webkit-appearance: none;
   appearance: none;
   position: absolute;
   bottom: 20px;
@@ -16644,7 +16645,7 @@ footer {
 
 .btn {
   min-width: 121px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 15px;
   padding: 9px; }
   .btn-outline-primary {
@@ -16791,7 +16792,8 @@ footer {
   padding-top: 20px;
   position: relative;
   direction: rtl;
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 13px; }
 
 .mil-instagram-right-container-top, .mil-instagram-right-container-bottom {
   text-align: center;
@@ -16822,7 +16824,8 @@ footer {
 
 @media (min-width: 768px) {
   .mil-instagram-section {
-    padding-top: 50px; }
+    padding-top: 50px;
+    font-size: 14px; }
   .mil-instagram-images-container {
     position: absolute;
     right: 346px;
@@ -16926,6 +16929,8 @@ footer {
 .mil-feedback-section {
   height: 376px;
   background: url(../images/feedback-bg.jpg) no-repeat bottom center; }
+  .mil-feedback-section button {
+    width: 100%; }
 
 .mil-feedback-row > * {
   max-width: initial !important;
@@ -16939,6 +16944,8 @@ footer {
 @media (min-width: 768px) {
   .mil-feedback-section {
     height: 413px; }
+    .mil-feedback-section button {
+      width: auto; }
   .mil-feedback-input {
     width: 337px;
     margin-bottom: 4px; }
