@@ -15408,6 +15408,8 @@ header {
     height: 82px; }
   header .dropdown-city a {
     font-size: 13px !important; }
+  header .mil-offcanvas-btn.open .i-menu {
+    background-image: url(../images/icon-menu.svg#open); }
 
 .mil-top-side-menu {
   padding-right: 20px;
@@ -15417,7 +15419,7 @@ header {
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-right: 19px;
+    margin-right: 15px;
     position: relative;
     font-family: 'montserratregular';
     font-weight: normal;
@@ -15432,12 +15434,14 @@ header {
       min-height: 15px;
       text-align: center;
       position: absolute;
-      top: 8px;
-      left: 8px;
+      top: 14px;
+      left: 12px;
       padding: 0 5px; }
     .mil-top-side-menu a .i {
-      filter: invert(1); }
-      .mil-top-side-menu a .i-humburget {
+      filter: invert(1);
+      width: 24px;
+      height: 24px; }
+      .mil-top-side-menu a .i-menu {
         width: 24px;
         height: 24px; }
       .mil-top-side-menu a .i-profile + span {
@@ -15459,7 +15463,7 @@ header {
       height: 91px; }
       header .row .mil-offcanvas-btn {
         margin-right: 35px; }
-        header .row .mil-offcanvas-btn .i-humburget {
+        header .row .mil-offcanvas-btn .i-menu {
           filter: invert(1);
           width: 32px;
           height: 32px; }
@@ -15484,7 +15488,9 @@ header {
         left: auto;
         padding: 0; }
       .mil-top-side-menu a .i {
-        filter: invert(0); }
+        filter: invert(0);
+        width: 20px;
+        height: 20px; }
         .mil-top-side-menu a .i-profile + span {
           display: inline-block; }
       .mil-top-side-menu a .i + span {
@@ -15965,8 +15971,7 @@ input[type="radio"], input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  outline: none;
-  border: none; }
+  outline: none; }
 
 @media (min-width: 768px) {
   .mil-product-preview-item {
@@ -16556,6 +16561,8 @@ input[type="radio"], input[type="checkbox"] {
   padding-bottom: 60px;
   position: relative;
   z-index: 1; }
+  .mil-main-center-carousel-section .btn {
+    padding: 9px; }
   .mil-main-center-carousel-section .slick-dots {
     right: 0;
     left: 0;
@@ -16607,6 +16614,8 @@ input[type="radio"], input[type="checkbox"] {
       width: auto; }
   .mil-main-center-carousel-section {
     padding-bottom: 100px; }
+    .mil-main-center-carousel-section .btn {
+      padding: 18px; }
     .mil-main-center-carousel-section .slick-dots {
       width: 615px;
       bottom: -55px; } }
@@ -16654,7 +16663,7 @@ input[type="radio"], input[type="checkbox"] {
   min-width: 121px;
   font-size: 13px;
   line-height: 15px;
-  padding: 9px; }
+  padding: 14px; }
   .btn-outline-primary {
     border-color: #000000;
     color: #000000; }
@@ -17141,8 +17150,8 @@ footer {
   .i-social {
     width: 28px;
     height: 28px; }
-  .i-humburget {
-    background-image: url(../images/icon-humburger.svg); }
+  .i-menu {
+    background-image: url(../images/icon-menu.svg#close); }
   .i-search {
     background-image: url(../images/icon-search.svg); }
 

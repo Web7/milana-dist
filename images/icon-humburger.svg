@@ -1,3 +1,9 @@
 <svg width="24mm" height="24mm" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
- <path d="m0 4v0.99994h24v-0.99994zm0 7.4998v1.0005h24v-1.0005zm0 7.5003v0.99994h24v-0.99994z" fill="#000000" fill-rule="evenodd" stroke-width=".26458"/>
+ <g >
+  <path d="m0 4v0.99994h24v-0.99994zm0 7.4998v1.0005h24v-1.0005zm0 7.5003v0.99994h24v-0.99994z" fill="#000000"/>
+ </g>
+ <g id="Group_949" transform="translate(-274.831 -29.055)" fill="none" stroke="#000000" stroke-width="1.5">
+  <path d="M-2767.38-19490.422l18.1,18.535" transform="translate(3042.951 19520)"/>
+  <path d="M0,0,18.1,18.535" transform="translate(293.891 29.793) rotate(90)"/>
+ </g>
 </svg>
