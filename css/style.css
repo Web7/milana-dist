@@ -15961,6 +15961,13 @@ footer {
   .favorites-check:checked {
     background-image: url(../images/favorites-sprite.svg#on); }
 
+input[type="radio"], input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none; }
+
 @media (min-width: 768px) {
   .mil-product-preview-item {
     height: 520px; }
