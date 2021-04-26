@@ -15546,6 +15546,8 @@ footer {
       color: #000000; }
       footer .nav-link:hover {
         color: #8c2837; }
+  footer .icon-card-payments {
+    height: 16px; }
   footer .accordion-item {
     background-color: transparent;
     border: none;
