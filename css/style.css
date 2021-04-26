@@ -15729,6 +15729,10 @@ footer {
   color: #000000;
   text-decoration: none; }
 
+.off-canvas-search {
+  margin-left: -20px;
+  margin-right: -20px; }
+
 .off-canvas-phone {
   font-family: 'montserratmedium';
   font-weight: normal;
@@ -15956,6 +15960,7 @@ footer {
 .favorites-check {
   -webkit-appearance: none;
   appearance: none;
+  border: none;
   position: absolute;
   bottom: 20px;
   right: 15px;
@@ -16571,7 +16576,7 @@ input[type="radio"], input[type="checkbox"] {
     width: 241px; }
     .mil-main-center-carousel-section .slick-dots li.slick-active button {
       background-color: #000000; }
-    .mil-main-center-carousel-section .slick-dots li.slick-active:hover button {
+    .mil-main-center-carousel-section .slick-dots li:not(.slick-active):hover button {
       background-color: #8c2837; }
 
 .mil-main-center-carousel-item {
@@ -17007,7 +17012,8 @@ input[type="radio"], input[type="checkbox"] {
 .form-check-white {
   color: #ffffff; }
   .form-check-white .form-check-input {
-    border-color: #ffffff; }
+    border-color: #ffffff;
+    border-radius: 0 !important; }
     .form-check-white .form-check-input:checked {
       border-color: #ffffff;
       background-image: url(../images/checkboxes-sprite.svg#white-checkbox); }
@@ -17015,7 +17021,8 @@ input[type="radio"], input[type="checkbox"] {
 .form-check-primary {
   color: #8c2837; }
   .form-check-primary .form-check-input {
-    border-color: #8c2837; }
+    border-color: #8c2837;
+    border-radius: 0 !important; }
     .form-check-primary .form-check-input:checked {
       border-color: #8c2837;
       background-image: url(../images/checkboxes-sprite.svg#primary-checkbox); }
@@ -17023,7 +17030,8 @@ input[type="radio"], input[type="checkbox"] {
 .form-check-secondary {
   color: #cbccd4; }
   .form-check-secondary .form-check-input {
-    border-color: #cbccd4; }
+    border-color: #cbccd4;
+    border-radius: 0 !important; }
     .form-check-secondary .form-check-input:checked {
       border-color: #cbccd4;
       background-image: url(../images/checkboxes-sprite.svg#secondary-checkbox); }
@@ -17031,7 +17039,8 @@ input[type="radio"], input[type="checkbox"] {
 .form-check-black {
   color: #000000; }
   .form-check-black .form-check-input {
-    border-color: #000000; }
+    border-color: #000000;
+    border-radius: 0 !important; }
     .form-check-black .form-check-input:checked {
       border-color: #000000;
       background-image: url(../images/checkboxes-sprite.svg#black-checkbox); }
