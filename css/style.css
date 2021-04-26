@@ -15706,6 +15706,10 @@ footer {
   footer {
     font-size: 14px;
     line-height: 20px; }
+    footer .footer-yandex {
+      width: 10%;
+      margin-left: auto;
+      text-align: left; }
   .nav {
     line-height: 30px; }
   .mil-socials-container {
