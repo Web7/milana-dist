@@ -5110,19 +5110,19 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #8c2837;
+  color: #000000;
   text-decoration: none;
   background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.31);
+  border: 0 solid none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .page-link {
       transition: none; } }
   .page-link:hover {
     z-index: 2;
-    color: #70202c;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-color: rgba(0, 0, 0, 0.31); }
+    color: #ffffff;
+    background-color: #8c2837;
+    border-color: none; }
   .page-link:focus {
     z-index: 3;
     color: #70202c;
@@ -5131,7 +5131,7 @@ textarea.form-control-lg {
     box-shadow: 0 0 0 0.25rem rgba(140, 40, 55, 0.25); }
 
 .page-item:not(:first-child) .page-link {
-  margin-left: -1px; }
+  margin-left: 0; }
 
 .page-item.active .page-link {
   z-index: 3;
@@ -5149,12 +5149,12 @@ textarea.form-control-lg {
   padding: 0.375rem 0.75rem; }
 
 .page-item:first-child .page-link {
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem; }
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
 
 .page-item:last-child .page-link {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem; }
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
@@ -15567,8 +15567,10 @@ footer {
   position: relative;
   width: 100%;
   height: 292px;
-  text-decoration: none;
   color: initial; }
+  .mil-product-preview-item a {
+    text-decoration: none;
+    color: #000000; }
   .mil-product-preview-item-sizes {
     list-style: none;
     margin: 0;
@@ -15617,7 +15619,7 @@ footer {
     background: no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 227px;
+    height: 288px;
     margin-bottom: 25px; }
     .mil-product-preview-item-img:before {
       content: "";
@@ -15675,6 +15677,19 @@ footer {
       line-height: 1;
       padding: 5px 10px;
       height: 24px; }
+
+.favorites-check {
+  appearance: none;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  background: url(../images/favorites-sprite.svg#off) no-repeat 0 0;
+  width: 23px;
+  height: 23px;
+  z-index: 3;
+  cursor: pointer; }
+  .favorites-check:checked {
+    background-image: url(../images/favorites-sprite.svg#on); }
 
 @media (min-width: 768px) {
   .mil-product-preview-item {
@@ -16201,6 +16216,10 @@ footer {
   max-width: 183px;
   height: 292px; }
 
+.mil-product-carousel-slick .mil-product-preview-img {
+  width: 100%;
+  height: 227px; }
+
 @media (min-width: 768px) {
   .mil-product-carousel-slick .mil-product-preview-item {
     width: 290px;
@@ -16363,80 +16382,113 @@ footer {
   .btn {
     min-width: 195px; } }
 
+.h3 {
+  font-family: 'montserratbold'; }
+
 .h1 {
-  font-size: 39px; }
+  font-size: 39px;
+  font-weight: normal; }
 
 .h2 {
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: normal; }
 
 .h3 {
-  font-size: 40px; }
+  font-size: 20px;
+  font-weight: normal; }
 
 .h4 {
-  font-size: 36px; }
+  font-size: 36px;
+  font-weight: normal; }
 
 .h5 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: normal; }
 
 @media (min-width: 768px) {
   .h1 {
-    font-size: 60px; }
+    font-size: 60px;
+    font-weight: normal; }
   .h2 {
-    font-size: 35px; }
+    font-size: 35px;
+    font-weight: normal; }
   .h3 {
-    font-size: 40px; }
+    font-size: 40px;
+    font-weight: normal; }
   .h4 {
-    font-size: 36px; }
+    font-size: 36px;
+    font-weight: normal; }
   .h5 {
-    font-size: 25px; } }
+    font-size: 25px;
+    font-weight: normal; } }
 
 @media (min-width: 992px) {
   .h1 {
-    font-size: 51px; }
+    font-size: 51px;
+    font-weight: normal; }
   .h2 {
-    font-size: 45px; }
+    font-size: 45px;
+    font-weight: normal; }
   .h3 {
-    font-size: 40px; }
+    font-size: 40px;
+    font-weight: normal; }
   .h4 {
-    font-size: 36px; }
+    font-size: 36px;
+    font-weight: normal; }
   .h5 {
-    font-size: 25px; } }
+    font-size: 25px;
+    font-weight: normal; } }
 
 @media (min-width: 1200px) {
   .h1 {
-    font-size: 61px; }
+    font-size: 61px;
+    font-weight: normal; }
   .h2 {
-    font-size: 45px; }
+    font-size: 45px;
+    font-weight: normal; }
   .h3 {
-    font-size: 40px; }
+    font-size: 40px;
+    font-weight: normal; }
   .h4 {
-    font-size: 36px; }
+    font-size: 36px;
+    font-weight: normal; }
   .h5 {
-    font-size: 25px; } }
+    font-size: 25px;
+    font-weight: normal; } }
 
 @media (min-width: 1400px) {
   .h1 {
-    font-size: 71px; }
+    font-size: 71px;
+    font-weight: normal; }
   .h2 {
-    font-size: 60px; }
+    font-size: 60px;
+    font-weight: normal; }
   .h3 {
-    font-size: 40px; }
+    font-size: 40px;
+    font-weight: normal; }
   .h4 {
-    font-size: 36px; }
+    font-size: 36px;
+    font-weight: normal; }
   .h5 {
-    font-size: 30px; } }
+    font-size: 30px;
+    font-weight: normal; } }
 
 @media (min-width: 1600px) {
   .h1 {
-    font-size: 71px; }
+    font-size: 71px;
+    font-weight: normal; }
   .h2 {
-    font-size: 60px; }
+    font-size: 60px;
+    font-weight: normal; }
   .h3 {
-    font-size: 40px; }
+    font-size: 40px;
+    font-weight: normal; }
   .h4 {
-    font-size: 36px; }
+    font-size: 36px;
+    font-weight: normal; }
   .h5 {
-    font-size: 30px; } }
+    font-size: 30px;
+    font-weight: normal; } }
 
 .mil-instagram-section {
   background-color: #f6f6f8;
