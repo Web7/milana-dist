@@ -16487,6 +16487,7 @@ footer {
 .mil-product-carousel-slick .mil-product-preview-item {
   width: 183px;
   max-width: 183px;
+  min-width: 183px;
   height: 292px; }
   .mil-product-carousel-slick .mil-product-preview-item-img {
     width: 100%;
