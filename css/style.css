@@ -16545,7 +16545,7 @@ footer {
 
 .mil-main-center-carousel-section {
   background-color: #f6f6f8;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   position: relative;
   z-index: 1; }
   .mil-main-center-carousel-section .slick-dots {
@@ -16597,9 +16597,11 @@ footer {
     padding: 130px 0 145px 0; }
     .mil-main-center-carousel-item .h2 {
       width: auto; }
-  .mil-main-center-carousel-section .slick-dots {
-    width: 615px;
-    bottom: -55px; } }
+  .mil-main-center-carousel-section {
+    padding-bottom: 100px; }
+    .mil-main-center-carousel-section .slick-dots {
+      width: 615px;
+      bottom: -55px; } }
 
 @media (min-width: 992px) {
   .mil-main-center-carousel-item {
@@ -16786,6 +16788,7 @@ footer {
 
 .mil-instagram-section {
   background-color: #f6f6f8;
+  padding-top: 20px;
   position: relative;
   direction: rtl;
   overflow: hidden; }
