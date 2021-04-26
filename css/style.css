@@ -16244,7 +16244,7 @@ footer {
       background-color: #8c2837; }
 
 .mil-main-center-carousel-item {
-  padding: 142px 0 144px 0;
+  padding: 50px 0 60px 0;
   text-align: center;
   background: no-repeat center center;
   background-size: cover;
@@ -16268,12 +16268,19 @@ footer {
   .mil-main-center-carousel-item-content {
     position: relative;
     z-index: 2; }
+  .mil-main-center-carousel-item .h2 {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto; }
 
 @media (min-width: 768px) {
   .mil-main-center-carousel-item {
     font-size: 25px;
     line-height: 34px;
-    min-height: 531px; }
+    min-height: 531px;
+    padding: 130px 0 145px 0; }
+    .mil-main-center-carousel-item .h2 {
+      width: auto; }
   .mil-main-center-carousel-section .slick-dots {
     width: 615px;
     bottom: -55px; } }
@@ -16282,7 +16289,8 @@ footer {
   .mil-main-center-carousel-item {
     font-size: 30px;
     line-height: 34px;
-    min-height: 531px; }
+    min-height: 531px;
+    padding: 130px 0 145px 0; }
   .mil-main-center-carousel-section .slick-dots {
     width: 615px;
     bottom: -55px; } }
@@ -16291,7 +16299,8 @@ footer {
   .mil-main-center-carousel-item {
     font-size: 25px;
     line-height: 34px;
-    min-height: 531px; }
+    min-height: 531px;
+    padding: 145px 0 150px 0; }
   .mil-main-center-carousel-section .slick-dots {
     bottom: -65px;
     width: 552px; } }
@@ -16300,7 +16309,8 @@ footer {
   .mil-main-center-carousel-item {
     font-size: 30px;
     line-height: 34px;
-    min-height: 531px; }
+    min-height: 531px;
+    padding: 140px 0 145px 0; }
   .mil-main-center-carousel-section .slick-dots {
     width: 615px;
     bottom: -70px; } }
