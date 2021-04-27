@@ -17045,9 +17045,9 @@ input[type="radio"], input[type="checkbox"] {
       border-color: #000000;
       background-image: url(../images/checkboxes-sprite.svg#black-checkbox); }
 
-.dropdown-toggle {
+.mil-filters .dropdown-toggle {
   display: flex; }
-  .dropdown-toggle:after {
+  .mil-filters .dropdown-toggle:after {
     display: inline-block;
     vertical-align: 0.255em;
     content: "";
@@ -17057,8 +17057,27 @@ input[type="radio"], input[type="checkbox"] {
     margin: auto 0 auto 10px;
     transform: rotateX(0);
     transition: transform linear 300ms; }
-  .dropdown-toggle.show:after {
+  .mil-filters .dropdown-toggle.show:after {
     transform: rotateX(180deg); }
+
+.mil-filters .dropdown-menu {
+  max-height: 400px; }
+  .mil-filters .dropdown-menu .column-block {
+    max-height: calc(400px - 90px);
+    margin-bottom: -20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%; }
+  .mil-filters .dropdown-menu .form-check {
+    max-width: 200px;
+    margin-bottom: 20px;
+    margin-right: 40px; }
+    .mil-filters .dropdown-menu .form-check:last-child {
+      margin-bottom: 0; }
 
 html {
   height: 100%; }
