@@ -16,6 +16,7 @@
 	var dropdownElementList;
 	var dropdownList;
 	var scrollBars = {};
+	var dropdownScrollbars = {};
 
 	var initLeftSideMenu = function() {
 		var $body = $(document.body);
@@ -33,6 +34,7 @@
 	};
 
 	$(function () {
+		var $dropdownScrollbar = $('.dropdown-scrollbar');
 		var $milScrollBar = $('.mil-scroll-bar');
 		var $offCanvas = $('.off-canvas');
 		var $milMainCarousel = $('.mil-main-carousel');
@@ -74,6 +76,16 @@
 			$milScrollBar.each(function () {
 				var dataScrollIndex = this.getAttribute('data-scroll-index');
 				scrollBars[dataScrollIndex] = new PerfectScrollbar(this, {
+					wheelPropagation: false
+				});
+			});
+		}
+
+		if ($dropdownScrollbar.exists()) {
+			dropdownScrollbars = {};
+			$dropdownScrollbar.each(function () {
+				var dataScrollIndex = this.getAttribute('data-scroll-index');
+				dropdownScrollbars[dataScrollIndex] = new PerfectScrollbar(this, {
 					wheelPropagation: false
 				});
 			});
@@ -140,16 +152,16 @@
 	};
 
 	$(document).on('click', '.dropdown-toggle', function (e) {
-		var $this = $(this);
-		var $dropdown = $this.closest('.dropdown');
-		var $dropdownMenu = $dropdown.find('.dropdown-menu');
-
-		if (!$dropdownMenu.hasClass('show')) {
-			closeDropdown();
-		}
-
-		$this.toggleClass('show');
-		$dropdownMenu.toggleClass('show');
+		// var $this = $(this);
+		// var $dropdown = $this.closest('.dropdown');
+		// var $dropdownMenu = $dropdown.find('.dropdown-menu');
+		//
+		// if (!$dropdownMenu.hasClass('show')) {
+		// 	closeDropdown();
+		// }
+		//
+		// $this.toggleClass('show');
+		// $dropdownMenu.toggleClass('show');
 
 		e.preventDefault();
 		e.stopPropagation();
