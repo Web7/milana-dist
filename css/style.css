@@ -20158,7 +20158,10 @@ input[type="radio"], input[type="checkbox"] {
         margin-left: 9px;
         margin-bottom: 1px;
         background: url(../images/slick-arrows.svg#arrow-right-black) no-repeat center center;
-        background-size: contain; }
+        background-size: contain;
+        transition: margin-left linear 300ms; }
+      .promotion-preview-item-text a:hover:after {
+        margin-left: 14px; }
 
 @media (min-width: 768px) {
   .promotion-preview-item-image {
