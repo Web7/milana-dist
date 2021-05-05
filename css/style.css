@@ -20325,12 +20325,15 @@ footer {
 .sticky-container {
   z-index: 10; }
 
+.sticky-nav-tabs {
+  height: 59px;
+  margin-bottom: 80px; }
+
 .nav-tabs {
   font-family: 'montserratsemibold';
   font-weight: normal;
   font-size: 13px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  margin-bottom: 80px;
   line-height: 19px;
   flex-wrap: nowrap;
   padding-bottom: 1px;
