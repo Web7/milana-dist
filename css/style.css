@@ -722,8 +722,8 @@ table {
   border-collapse: collapse; }
 
 caption {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 28px;
+  padding-bottom: 28px;
   color: #afafb9;
   text-align: left; }
 
@@ -3400,7 +3400,7 @@ progress {
   vertical-align: top;
   border-color: rgba(0, 0, 0, 0.31); }
   .table > :not(caption) > * > * {
-    padding: 0.5rem 0.5rem;
+    padding: 28px 30px;
     background-color: var(--bs-table-bg);
     border-bottom-width: 1px;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg); }
@@ -3515,15 +3515,15 @@ progress {
   border-color: #dddddf; }
 
 .table-dark {
-  --bs-table-bg: #cecece;
-  --bs-table-striped-bg: #c4c4c4;
-  --bs-table-striped-color: #000000;
-  --bs-table-active-bg: #b9b9b9;
-  --bs-table-active-color: #000000;
-  --bs-table-hover-bg: #bfbfbf;
-  --bs-table-hover-color: #000000;
-  color: #000000;
-  border-color: #b9b9b9; }
+  --bs-table-bg: #000000;
+  --bs-table-striped-bg: #0d0d0d;
+  --bs-table-striped-color: #ffffff;
+  --bs-table-active-bg: #1a1a1a;
+  --bs-table-active-color: #ffffff;
+  --bs-table-hover-bg: #131313;
+  --bs-table-hover-color: #ffffff;
+  color: #ffffff;
+  border-color: #1a1a1a; }
 
 .table-responsive {
   overflow-x: auto;
@@ -20244,6 +20244,16 @@ input[type="radio"], input[type="checkbox"] {
       font-size: 14px;
       font-family: 'montserratregular';
       font-weight: normal; }
+
+.table {
+  font-weight: normal;
+  font-size: 14px; }
+  .table thead {
+    font-family: 'montserratmedium'; }
+  .table tbody td {
+    font-family: 'montserratregular'; }
+  .table tbody th {
+    font-family: 'montserratsemibold'; }
 
 html {
   height: 100%; }
