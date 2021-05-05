@@ -5614,15 +5614,15 @@ textarea.form-control-lg {
 
 .badge {
   display: inline-block;
-  padding: 0.35em 0.65em;
-  font-size: 0.75em;
-  font-weight: 700;
+  padding: 4px 4px;
+  font-size: 0.6875rem;
+  font-weight: normal;
   line-height: 1;
   color: #ffffff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25rem; }
+  border-radius: none; }
   .badge:empty {
     display: none; }
 
@@ -20319,7 +20319,7 @@ footer {
   font-size: 13px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   margin-bottom: 80px;
-  line-height: 1;
+  line-height: 19px;
   flex-wrap: nowrap;
   padding-bottom: 1px;
   position: relative; }
