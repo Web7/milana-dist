@@ -19654,10 +19654,18 @@ input[type="radio"], input[type="checkbox"] {
   .btn-outline-primary {
     border-color: #000000;
     color: #000000; }
+  .btn-outline-black:hover, .btn-outline-black:focus, .btn-outline-black:active {
+    border-color: #8c2837;
+    color: #ffffff;
+    background-color: #8c2837; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     border-color: #ffffff;
     color: #8c2837;
     background-color: #ffffff; }
+  .btn-black:hover, .btn-black:focus, .btn-black:active {
+    border-color: #8c2837;
+    color: #ffffff;
+    background-color: #8c2837; }
 
 @media (min-width: 768px) {
   .btn:not(.btn-sm) {
@@ -20314,6 +20322,9 @@ footer {
     color: #000000;
     text-decoration: none; }
 
+.sticky-container {
+  z-index: 10; }
+
 .nav-tabs {
   font-family: 'montserratsemibold';
   font-weight: normal;
@@ -20323,7 +20334,8 @@ footer {
   line-height: 19px;
   flex-wrap: nowrap;
   padding-bottom: 1px;
-  position: relative; }
+  position: relative;
+  background-color: #ffffff; }
   .nav-tabs .nav-link {
     padding: 18px 6px;
     margin-left: 5px;

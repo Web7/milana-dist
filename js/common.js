@@ -41,6 +41,8 @@
 		var $milProductCarouselSlick = $('.mil-product-carousel-slick');
 		var $milMainCenterCarouselSlick = $('.mil-main-center-carousel-slick');
 
+		var sticky = new Sticky('.sticky-container');
+
 		initLeftSideMenu();
 
 		if ($offCanvas.exists()) {
