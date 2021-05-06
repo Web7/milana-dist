@@ -3425,7 +3425,7 @@ progress {
 .table-borderless > :not(caption) > * > * {
   border-bottom-width: 0; }
 
-.table-striped > tbody > tr:nth-of-type(odd) {
+.table-striped > tbody > tr:nth-of-type(even) {
   --bs-table-accent-bg: var(--bs-table-striped-bg);
   color: var(--bs-table-striped-color); }
 
@@ -20305,6 +20305,24 @@ input[type="radio"], input[type="checkbox"] {
     line-height: 16px; }
   .personal-area-form .btn {
     font-size: 14px; }
+  .personal-area-form .order-link {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/slick-arrows.svg#arrow-right-black) no-repeat center center;
+    background-size: contain; }
+  .personal-area-form .order-true {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: url(../images/icons-order-info.svg#true) no-repeat center center;
+    background-size: contain; }
+  .personal-area-form .order-false {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: url(../images/icons-order-info.svg#false) no-repeat center center;
+    background-size: contain; }
 
 .sales-info-container {
   min-height: 310px;
@@ -20436,6 +20454,9 @@ footer {
   .dropdown-city a {
     color: #000000;
     text-decoration: none; }
+
+.text-justify {
+  text-align: justify; }
 
 .sticky-container {
   z-index: 10; }
