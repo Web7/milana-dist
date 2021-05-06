@@ -18420,7 +18420,7 @@ header {
       margin-right: 0; }
 
 .mil-header-logo {
-  background: url(../images/logo.svg) no-repeat center center;
+  background: url(../images/logo.svg#logo-white) no-repeat center center;
   background-size: contain;
   width: 102px;
   height: 82px;
@@ -20300,6 +20300,55 @@ input[type="radio"], input[type="checkbox"] {
       font-size: 14px;
       font-family: 'montserratregular';
       font-weight: normal; }
+  .personal-area-form input + .small small, .personal-area-form input + .small .small {
+    font-size: 12px;
+    line-height: 16px; }
+  .personal-area-form .btn {
+    font-size: 14px; }
+
+.sales-info-container {
+  min-height: 310px;
+  width: 100%; }
+
+.sales-logo {
+  background: url(../images/logo.svg#logo-black) no-repeat center center;
+  background-size: contain;
+  width: 122px;
+  height: 38px;
+  display: inline-block; }
+
+.sales-number {
+  font-family: 'montserratmedium';
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1; }
+
+.sales-percent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  font-family: 'montserratsemibold';
+  font-weight: normal;
+  line-height: 0;
+  text-align: center; }
+  .sales-percent span {
+    font-size: 257px; }
+  .sales-percent small, .sales-percent .small {
+    font-size: 189px; }
+  .sales-percent-bg {
+    background: url(../images/sales-percent-bg.png) no-repeat 0 0;
+    background-size: contain;
+    width: 177px;
+    height: 386px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1; }
+
+@media (min-width: 992px) {
+  .personal-area-form input + .small small, .personal-area-form input + .small .small {
+    width: 205px; } }
 
 .table {
   font-weight: normal;
@@ -20396,7 +20445,7 @@ footer {
   margin-bottom: 80px; }
 
 .nav-tabs {
-  font-family: 'montserratsemibold';
+  font-family: 'montserratmedium';
   font-weight: normal;
   font-size: 13px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -20413,6 +20462,8 @@ footer {
     color: #000000;
     border-bottom: 3px solid transparent;
     white-space: nowrap; }
+    .nav-tabs .nav-link:hover {
+      color: #8c2837; }
   .nav-tabs .nav-item:first-child .nav-link {
     margin-left: 0; }
   .nav-tabs .nav-item:last-child .nav-link {
@@ -20528,8 +20579,11 @@ footer {
     background-image: url(../images/icons-sprite.svg#whatsapp-secondary); }
   .i-whatsapp.i-white {
     background-image: url(../images/icons-sprite.svg#whatsapp-white); }
-  .i-whatsapp.i-primary, .i-whatsapp.active, .i-whatsapp:hover {
+  .i-whatsapp.i-primary, .i-whatsapp.active, .i-whatsapp[href]:hover {
     background-image: url(../images/icons-sprite.svg#whatsapp-primary); }
+
+a[href] .i-whatsapp:hover {
+  background-image: url(../images/icons-sprite.svg#whatsapp-primary); }
 
 .i-telegram {
   background-image: url(../images/icons-sprite.svg#telegram-black); }
@@ -20539,8 +20593,11 @@ footer {
     background-image: url(../images/icons-sprite.svg#telegram-secondary); }
   .i-telegram.i-white {
     background-image: url(../images/icons-sprite.svg#telegram-white); }
-  .i-telegram.i-primary, .i-telegram.active, .i-telegram:hover {
+  .i-telegram.i-primary, .i-telegram.active, .i-telegram[href]:hover {
     background-image: url(../images/icons-sprite.svg#telegram-primary); }
+
+a[href] .i-telegram:hover {
+  background-image: url(../images/icons-sprite.svg#telegram-primary); }
 
 .i-basket {
   background-image: url(../images/icons-sprite.svg#basket-black); }
@@ -20550,8 +20607,11 @@ footer {
     background-image: url(../images/icons-sprite.svg#basket-secondary); }
   .i-basket.i-white {
     background-image: url(../images/icons-sprite.svg#basket-white); }
-  .i-basket.i-primary, .i-basket.active, .i-basket:hover {
+  .i-basket.i-primary, .i-basket.active, .i-basket[href]:hover {
     background-image: url(../images/icons-sprite.svg#basket-primary); }
+
+a[href] .i-basket:hover {
+  background-image: url(../images/icons-sprite.svg#basket-primary); }
 
 .i-favorite {
   background-image: url(../images/icons-sprite.svg#favorite-black); }
@@ -20561,8 +20621,11 @@ footer {
     background-image: url(../images/icons-sprite.svg#favorite-secondary); }
   .i-favorite.i-white {
     background-image: url(../images/icons-sprite.svg#favorite-white); }
-  .i-favorite.i-primary, .i-favorite.active, .i-favorite:hover {
+  .i-favorite.i-primary, .i-favorite.active, .i-favorite[href]:hover {
     background-image: url(../images/icons-sprite.svg#favorite-primary); }
+
+a[href] .i-favorite:hover {
+  background-image: url(../images/icons-sprite.svg#favorite-primary); }
 
 .i-profile {
   background-image: url(../images/icons-sprite.svg#profile-black); }
@@ -20572,8 +20635,11 @@ footer {
     background-image: url(../images/icons-sprite.svg#profile-secondary); }
   .i-profile.i-white {
     background-image: url(../images/icons-sprite.svg#profile-white); }
-  .i-profile.i-primary, .i-profile.active, .i-profile:hover {
+  .i-profile.i-primary, .i-profile.active, .i-profile[href]:hover {
     background-image: url(../images/icons-sprite.svg#profile-primary); }
+
+a[href] .i-profile:hover {
+  background-image: url(../images/icons-sprite.svg#profile-primary); }
 
 .i-gift {
   background-image: url(../images/icons-sprite.svg#gift-black); }
@@ -20583,8 +20649,11 @@ footer {
     background-image: url(../images/icons-sprite.svg#gift-secondary); }
   .i-gift.i-white {
     background-image: url(../images/icons-sprite.svg#gift-white); }
-  .i-gift.i-primary, .i-gift.active, .i-gift:hover {
+  .i-gift.i-primary, .i-gift.active, .i-gift[href]:hover {
     background-image: url(../images/icons-sprite.svg#gift-primary); }
+
+a[href] .i-gift:hover {
+  background-image: url(../images/icons-sprite.svg#gift-primary); }
 
 .i-instagram {
   background-image: url(../images/icons-social-sprite.svg#instagram-secondary); }
@@ -20594,8 +20663,11 @@ footer {
     background-image: url(../images/icons-social-sprite.svg#instagram-secondary); }
   .i-instagram.i-white {
     background-image: url(../images/icons-social-sprite.svg#instagram-white); }
-  .i-instagram.i-primary, .i-instagram.active, .i-instagram:hover {
+  .i-instagram.i-primary, .i-instagram.active, .i-instagram[href]:hover {
     background-image: url(../images/icons-social-sprite.svg#instagram-primary); }
+
+a[href] .i-instagram:hover {
+  background-image: url(../images/icons-social-sprite.svg#instagram-primary); }
 
 .i-fb {
   background-image: url(../images/icons-social-sprite.svg#fb-secondary); }
@@ -20605,8 +20677,11 @@ footer {
     background-image: url(../images/icons-social-sprite.svg#fb-secondary); }
   .i-fb.i-white {
     background-image: url(../images/icons-social-sprite.svg#fb-white); }
-  .i-fb.i-primary, .i-fb.active, .i-fb:hover {
+  .i-fb.i-primary, .i-fb.active, .i-fb[href]:hover {
     background-image: url(../images/icons-social-sprite.svg#fb-primary); }
+
+a[href] .i-fb:hover {
+  background-image: url(../images/icons-social-sprite.svg#fb-primary); }
 
 .i-vk {
   background-image: url(../images/icons-social-sprite.svg#vk-secondary); }
@@ -20616,8 +20691,11 @@ footer {
     background-image: url(../images/icons-social-sprite.svg#vk-secondary); }
   .i-vk.i-white {
     background-image: url(../images/icons-social-sprite.svg#vk-white); }
-  .i-vk.i-primary, .i-vk.active, .i-vk:hover {
+  .i-vk.i-primary, .i-vk.active, .i-vk[href]:hover {
     background-image: url(../images/icons-social-sprite.svg#vk-primary); }
+
+a[href] .i-vk:hover {
+  background-image: url(../images/icons-social-sprite.svg#vk-primary); }
 
 .i-ok {
   background-image: url(../images/icons-social-sprite.svg#ok-secondary); }
@@ -20627,8 +20705,11 @@ footer {
     background-image: url(../images/icons-social-sprite.svg#ok-secondary); }
   .i-ok.i-white {
     background-image: url(../images/icons-social-sprite.svg#ok-white); }
-  .i-ok.i-primary, .i-ok.active, .i-ok:hover {
+  .i-ok.i-primary, .i-ok.active, .i-ok[href]:hover {
     background-image: url(../images/icons-social-sprite.svg#ok-primary); }
+
+a[href] .i-ok:hover {
+  background-image: url(../images/icons-social-sprite.svg#ok-primary); }
 
 .i-twitter {
   background-image: url(../images/icons-social-sprite.svg#twitter-secondary); }
@@ -20638,8 +20719,11 @@ footer {
     background-image: url(../images/icons-social-sprite.svg#twitter-secondary); }
   .i-twitter.i-white {
     background-image: url(../images/icons-social-sprite.svg#twitter-white); }
-  .i-twitter.i-primary, .i-twitter.active, .i-twitter:hover {
+  .i-twitter.i-primary, .i-twitter.active, .i-twitter[href]:hover {
     background-image: url(../images/icons-social-sprite.svg#twitter-primary); }
+
+a[href] .i-twitter:hover {
+  background-image: url(../images/icons-social-sprite.svg#twitter-primary); }
 
 .i-pinterest {
   background-image: url(../images/icons-social-sprite.svg#pinterest-secondary); }
@@ -20649,8 +20733,11 @@ footer {
     background-image: url(../images/icons-social-sprite.svg#pinterest-secondary); }
   .i-pinterest.i-white {
     background-image: url(../images/icons-social-sprite.svg#pinterest-white); }
-  .i-pinterest.i-primary, .i-pinterest.active, .i-pinterest:hover {
+  .i-pinterest.i-primary, .i-pinterest.active, .i-pinterest[href]:hover {
     background-image: url(../images/icons-social-sprite.svg#pinterest-primary); }
+
+a[href] .i-pinterest:hover {
+  background-image: url(../images/icons-social-sprite.svg#pinterest-primary); }
 
 .i-youtobe {
   background-image: url(../images/icons-social-sprite.svg#youtobe-secondary); }
@@ -20660,6 +20747,9 @@ footer {
     background-image: url(../images/icons-social-sprite.svg#youtobe-secondary); }
   .i-youtobe.i-white {
     background-image: url(../images/icons-social-sprite.svg#youtobe-white); }
-  .i-youtobe.i-primary, .i-youtobe.active, .i-youtobe:hover {
+  .i-youtobe.i-primary, .i-youtobe.active, .i-youtobe[href]:hover {
     background-image: url(../images/icons-social-sprite.svg#youtobe-primary); }
+
+a[href] .i-youtobe:hover {
+  background-image: url(../images/icons-social-sprite.svg#youtobe-primary); }
 
