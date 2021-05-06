@@ -18903,7 +18903,8 @@ footer {
     font-family: 'montserratregular';
     font-weight: normal;
     font-size: 13px;
-    line-height: 18px; }
+    line-height: 1;
+    margin-bottom: 15px; }
   .mil-product-preview-item .mil-product-preview-item-price {
     margin-bottom: 20px;
     height: 28px;
@@ -18949,7 +18950,7 @@ footer {
   background-size: contain;
   width: 23px;
   height: 23px;
-  z-index: 3;
+  z-index: 5;
   cursor: pointer; }
   .favorites-check:checked {
     background-image: url(../images/favorites-sprite.svg#on); }
