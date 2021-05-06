@@ -113,84 +113,92 @@
               </ul>
             </div>
           </div>
-          <div class="row g-2 personal-area-form mb-26">
-            <div class="col-lg-6">
-              <div class="row">
-                <label class="col-lg-4 col-form-label mb-6">Мои данные</label>
-                <div class="col-lg-8 mb-6">
-                  <input class="form-control bg-light" type="text" placeholder="Фамилия">
-                </div>
-                <div class="col-lg-8 offset-lg-4 mb-6">
-                  <input class="form-control bg-light" type="text" placeholder="Имя">
-                </div>
-                <div class="col-lg-8 offset-lg-4 mb-6">
-                  <input class="form-control bg-light" type="text" placeholder="Отчество">
-                </div>
-                <div class="col-lg-8 offset-lg-4 mb-6">
+          <div class="row">
+            <div class="col-12 col-xxxl-10">
+              <form class="row g-2 personal-area-form mb-26 needs-validation" novalidate>
+                <div class="col-lg-6">
                   <div class="row">
-                    <div class="col-auto">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" value="" id="man" name="sex" checked>
-                        <label class="form-check-label" for="man">Мужской</label>
+                    <label class="col-lg-4 col-form-label mb-6">Мои данные</label>
+                    <div class="col-lg-8 mb-6">
+                      <input class="form-control bg-light" type="text" placeholder="Фамилия" aria-describedby="text1" required>
+                      <div class="invalid-feedback" id="text1">Заполните поле</div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-4 mb-6">
+                      <input class="form-control bg-light" type="text" placeholder="Имя" aria-describedby="text2" required>
+                      <div class="invalid-feedback" id="text2">Заполните поле</div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-4 mb-6">
+                      <input class="form-control bg-light" type="text" placeholder="Отчество" aria-describedby="text3" required>
+                      <div class="invalid-feedback" id="text3">Заполните поле</div>
+                    </div>
+                    <label class="col-lg-4 col-form-label mb-6">Пол</label>
+                    <div class="col-lg-8 mb-6">
+                      <div class="row">
+                        <div class="col-auto">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="sex_man" name="sex" checked>
+                            <label class="form-check-label" for="sex_man">Мужской</label>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="sex_woman" name="sex">
+                            <label class="form-check-label" for="sex_woman">Женский</label>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-auto">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" value="" id="woman" name="sex">
-                        <label class="form-check-label" for="woman">Женский</label>
+                    <label class="col-lg-4 col-form-label mb-6">Телефон</label>
+                    <div class="col-lg-8 mb-6">
+                      <input class="form-control bg-light" type="text" placeholder="+7 XXX XXX XX XX">
+                    </div>
+                    <label class="col-lg-4 col-form-label mb-6">e-mail</label>
+                    <div class="col-lg-8 mb-6">
+                      <input class="form-control bg-light mb-2" type="text" placeholder="">
+                      <div class="small">
+                        <div class="form-check">
+                          <input class="form-check-mark" type="checkbox" value="" id="newsletters" checked>
+                          <label class="form-check-label" for="newsletters">Быть в курсе новинок и акций Milana Shoes</label>
+                        </div>
                       </div>
+                    </div>
+                    <label class="col-lg-4 col-form-label mb-6">дата рождения</label>
+                    <div class="col-lg-8 mb-6">
+                      <input class="form-control bg-light mb-2" type="text" placeholder="дд-мм-гг">
+                      <div class="small text-secondary d-flex align-items-center"><i class="i i-gift i-secondary me-1 mb-1"></i><small>Укажи дату рождения и получай<br>приятные бонусы к празднику.</small></div>
                     </div>
                   </div>
                 </div>
-                <label class="col-lg-4 col-form-label mb-6">Телефон</label>
-                <div class="col-lg-8 mb-6">
-                  <input class="form-control bg-light" type="text" placeholder="+7 000 000 00 00">
-                </div>
-                <label class="col-lg-4 col-form-label mb-6">e-mail</label>
-                <div class="col-lg-8 mb-6">
-                  <input class="form-control bg-light mb-2" type="text" placeholder="">
-                  <div class="small">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="newsletters">
-                      <label class="form-check-label" for="newsletters">Быть в курсе новинок и акций Milana Shoes</label>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <label class="col-lg-2 col-form-label mb-6 offset-lg-2">Адрес</label>
+                    <div class="col-lg-8 mb-6">
+                      <input class="form-control bg-light" type="text" placeholder="Город">
+                    </div>
+                    <div class="col-lg-8 offset-lg-4 mb-6">
+                      <input class="form-control bg-light" type="text" placeholder="Улица">
+                    </div>
+                    <div class="col-lg-8 offset-lg-4 mb-6">
+                      <input class="form-control bg-light" type="text" placeholder="Дом">
+                    </div>
+                    <div class="col-lg-8 offset-lg-4 mb-6">
+                      <input class="form-control bg-light" type="text" placeholder="Корпус">
+                    </div>
+                    <div class="col-lg-8 offset-lg-4 mb-6">
+                      <input class="form-control bg-light" type="text" placeholder="Квартира">
+                    </div>
+                    <div class="col-lg-8 offset-lg-4 mb-6">
+                      <input class="form-control bg-light" type="text" placeholder="Индекс">
+                    </div>
+                    <div class="col-lg-8 offset-lg-4 mb-6">
+                      <button class="btn btn-outline-black btn-sm w-100" type="button">Сменить пароль</button>
+                    </div>
+                    <div class="col-lg-8 offset-lg-4 mb-6">
+                      <button class="btn btn-black btn-sm w-100" type="submit">Сохранить</button>
                     </div>
                   </div>
                 </div>
-                <label class="col-lg-4 col-form-label mb-6">дата рождения</label>
-                <div class="col-lg-8 mb-6">
-                  <input class="form-control bg-light mb-2" type="text" placeholder="дд-мм-гг">
-                  <div class="small text-dark"><small>Укажи дату рождения и получай<br>приятные бонусы к празднику.</small></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="row">
-                <label class="col-lg-2 col-form-label mb-6 offset-lg-2">Адрес</label>
-                <div class="col-lg-8 mb-6">
-                  <input class="form-control bg-light" type="text" placeholder="Город">
-                </div>
-                <div class="col-lg-8 offset-lg-4 mb-6">
-                  <input class="form-control bg-light" type="text" placeholder="Улица">
-                </div>
-                <div class="col-lg-8 offset-lg-4 mb-6">
-                  <input class="form-control bg-light" type="text" placeholder="Дом">
-                </div>
-                <div class="col-lg-8 offset-lg-4 mb-6">
-                  <input class="form-control bg-light" type="text" placeholder="Корпус">
-                </div>
-                <div class="col-lg-8 offset-lg-4 mb-6">
-                  <input class="form-control bg-light" type="text" placeholder="Квартира">
-                </div>
-                <div class="col-lg-8 offset-lg-4 mb-6">
-                  <input class="form-control bg-light" type="text" placeholder="Индекс">
-                </div>
-                <div class="col-lg-8 offset-lg-4 mb-6">
-                  <button class="btn btn-outline-black btn-sm w-100" type="button">Сменить пароль</button>
-                </div>
-                <div class="col-lg-8 offset-lg-4 mb-6">
-                  <button class="btn btn-black btn-sm w-100" type="button">Сохранить</button>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
