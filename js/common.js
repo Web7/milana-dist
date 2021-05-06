@@ -40,6 +40,7 @@
 		var $milMainCarousel = $('.mil-main-carousel');
 		var $milProductCarouselSlick = $('.mil-product-carousel-slick');
 		var $milMainCenterCarouselSlick = $('.mil-main-center-carousel-slick');
+		var $dataMask = $('[data-mask]');
 
 		var sticky = new Sticky('.sticky-container');
 
@@ -101,6 +102,14 @@
 				fade: true,
 				cssEase: 'linear'
 			})
+		}
+
+		if ($dataMask.exists()) {
+			$dataMask.each(function(){
+				var $this = $(this);
+				$this.mask($this.attr('data-mask'), {});
+			});
+
 		}
 
 		// dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
