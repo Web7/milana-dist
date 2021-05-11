@@ -20429,8 +20429,8 @@ input[type="radio"], input[type="checkbox"] {
 
 @media (min-width: 992px) {
   .tabs-personal-area .nav-tabs .nav-link {
-    margin-left: 18px;
-    margin-right: 18px; } }
+    margin-left: 17px;
+    margin-right: 17px; } }
 
 @media (min-width: 1200px) {
   .tabs-personal-area .nav-tabs .nav-link {
@@ -20449,6 +20449,8 @@ input[type="radio"], input[type="checkbox"] {
 
 .personal-area-form {
   font-size: 14px; }
+  .personal-area-form .accordion-button {
+    font-size: 16px; }
   .personal-area-form .col-form-label {
     font-family: 'montserratbold';
     font-weight: normal;
@@ -20572,6 +20574,14 @@ input[type="radio"], input[type="checkbox"] {
 @media (min-width: 992px) {
   .personal-area-form input + .small small, .personal-area-form input + .small .small {
     width: 205px; } }
+
+@media (min-width: 1200px) {
+  .personal-area-form .accordion-button {
+    font-size: 18px; } }
+
+@media (min-width: 1600px) {
+  .personal-area-form .accordion-button {
+    font-size: 20px; } }
 
 .table {
   font-weight: normal;
