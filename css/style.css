@@ -20522,14 +20522,8 @@ input[type="radio"], input[type="checkbox"] {
       display: inline-block;
       letter-spacing: -1px; }
 
-.personal-area-my-reviews .col-12:nth-last-child(-n+2) .personal-area-review-item {
+.personal-area-my-reviews .col-12:nth-last-child(-n+1) .personal-area-review-item {
   margin-bottom: 0; }
-
-.personal-area-my-reviews > *:nth-child(odd) {
-  padding-right: 70px; }
-
-.personal-area-my-reviews > *:nth-child(even) {
-  padding-left: 70px; }
 
 .personal-area-review-item {
   margin-bottom: 85px; }
@@ -20585,7 +20579,13 @@ input[type="radio"], input[type="checkbox"] {
 
 @media (min-width: 992px) {
   .personal-area-form input + .small small, .personal-area-form input + .small .small {
-    width: 205px; } }
+    width: 205px; }
+  .personal-area-my-reviews .col-12:nth-last-child(-n+2) .personal-area-review-item {
+    margin-bottom: 0; }
+  .personal-area-my-reviews > *:nth-child(odd) {
+    padding-right: 70px; }
+  .personal-area-my-reviews > *:nth-child(even) {
+    padding-left: 70px; } }
 
 @media (min-width: 1200px) {
   .personal-area-form .accordion-button {
@@ -20599,7 +20599,8 @@ input[type="radio"], input[type="checkbox"] {
   font-weight: normal;
   font-size: 14px; }
   .table thead {
-    font-family: 'montserratmedium'; }
+    font-family: 'montserratmedium';
+    vertical-align: top; }
   .table tbody td {
     font-family: 'montserratregular'; }
   .table tbody th {
