@@ -20450,7 +20450,7 @@ input[type="radio"], input[type="checkbox"] {
 .personal-area-form {
   font-size: 14px; }
   .personal-area-form .accordion-button {
-    font-size: 16px; }
+    font-size: 15px; }
   .personal-area-form .col-form-label {
     font-family: 'montserratbold';
     font-weight: normal;
@@ -20561,12 +20561,11 @@ input[type="radio"], input[type="checkbox"] {
   bottom: 5px;
   font-family: 'montserratsemibold';
   font-weight: normal;
-  line-height: 0;
-  text-align: center; }
+  line-height: 0; }
   .sales-percent span {
-    font-size: 257px; }
+    font-size: 179px; }
   .sales-percent small, .sales-percent .small {
-    font-size: 189px; }
+    font-size: 131px; }
   .sales-percent-bg {
     background: url(../images/sales-percent-bg.png) no-repeat 0 0;
     background-size: contain;
@@ -20577,7 +20576,17 @@ input[type="radio"], input[type="checkbox"] {
     top: 0;
     z-index: 1; }
 
+@media (min-width: 768px) {
+  .personal-area-form .accordion-button {
+    font-size: 16px; } }
+
 @media (min-width: 992px) {
+  .sales-percent {
+    text-align: center; }
+    .sales-percent span {
+      font-size: 257px; }
+    .sales-percent small, .sales-percent .small {
+      font-size: 189px; }
   .personal-area-form input + .small small, .personal-area-form input + .small .small {
     width: 205px; }
   .personal-area-my-reviews .col-12:nth-last-child(-n+2) .personal-area-review-item {
