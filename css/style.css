@@ -20477,11 +20477,23 @@ input[type="radio"], input[type="checkbox"] {
   .personal-area-form .btn {
     font-size: 14px; }
   .personal-area-form .order-link {
+    position: relative;
     display: inline-block;
-    width: 16px;
-    height: 16px;
-    background: url(../images/slick-arrows.svg#arrow-right-black) no-repeat center center;
-    background-size: contain; }
+    width: 21px;
+    height: 16px; }
+    .personal-area-form .order-link:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: url(../images/slick-arrows.svg#arrow-right-black) no-repeat center center;
+      background-size: contain;
+      transition: margin-left linear 300ms;
+      left: 0;
+      top: 0; }
+    .personal-area-form .order-link:hover:before {
+      margin-left: 5px; }
   .personal-area-form .order-true {
     display: inline-block;
     width: 8px;
