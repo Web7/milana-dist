@@ -20767,6 +20767,8 @@ strong {
   opacity: calc(100 * 0.01); }
 
 @media (min-width: 768px) {
+  .w-md-auto {
+    width: auto !important; }
   .mil-menu-width {
     width: 303px; }
   .full-image {
