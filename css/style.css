@@ -18832,7 +18832,7 @@ footer {
 .mil-product-preview-item {
   position: relative;
   width: 100%;
-  height: 292px;
+  min-height: 292px;
   color: initial; }
   .mil-product-preview-item a {
     text-decoration: none;
