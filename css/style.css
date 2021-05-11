@@ -18882,8 +18882,8 @@ footer {
     opacity: 1; }
   .mil-product-preview-item-img {
     position: relative;
-    background: no-repeat center center;
-    background-size: cover;
+    background: no-repeat center bottom;
+    background-size: contain;
     width: 100%;
     height: 288px;
     margin-bottom: 25px; }
@@ -18961,7 +18961,7 @@ footer {
   bottom: 20px;
   right: 15px;
   background: url(../images/favorites-sprite.svg#off) no-repeat 0 0;
-  background-size: cover;
+  background-size: contain;
   width: 23px;
   height: 23px;
   z-index: 5;
