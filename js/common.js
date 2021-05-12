@@ -203,6 +203,12 @@
 		}
 	});
 
+	$(document).on('click', '.favorites-check', function(e){
+		// enter your code
+
+		e.stopPropagation();
+	});
+
 	$(document).on('click', '.nav-sub-item > .nav-link', function (e) {
 		var $this = $(this);
 		var $navSubItem = $this.closest('.nav-sub-item');
