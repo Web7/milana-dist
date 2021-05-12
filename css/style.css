@@ -18749,6 +18749,8 @@ footer {
       margin-bottom: 20px; }
       .off-canvas-body .nav-item > .nav > .nav-item > .nav {
         margin: 10px 0 10px 20px; }
+    .off-canvas-body .nav-item.active > .nav-link {
+      color: #8c2837; }
     .off-canvas-body > .nav > .nav-item > .nav-link {
       font-family: 'montserratsemibold';
       text-transform: uppercase;

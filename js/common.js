@@ -36,7 +36,7 @@
 		}
 	};
 
-	var initNavTabsPersonalArea = function() {
+	var initNavTabsPersonalArea = function () {
 		if (!$navTabsPersonalArea.exists()) {
 			return;
 		}
@@ -66,7 +66,7 @@
 		}
 	};
 
-	var initStickyPersonalAreaNavTabs = function() {
+	var initStickyPersonalAreaNavTabs = function () {
 		var options = {
 			marginTop: 82
 		};
@@ -91,7 +91,7 @@
 
 	};
 
-	var init = function() {
+	var init = function () {
 		initLeftSideMenu();
 		initNavTabsPersonalArea();
 		initStickyPersonalAreaNavTabs();
@@ -201,6 +201,19 @@
 				})
 			});
 		}
+	});
+
+	$(document).on('click', '.nav-sub-item > .nav-link', function (e) {
+		var $this = $(this);
+		var $navSubItem = $this.closest('.nav-sub-item');
+		var $milScrollBar = $this.closest('.mil-scroll-bar');
+		var dataScrollIndex = $milScrollBar.attr('data-scroll-index');
+		$navSubItem.toggleClass('active');
+		scrollBars[dataScrollIndex].update();
+
+		e.preventDefault();
+		e.stopPropagation();
+		return false;
 	});
 
 	$(document).on('click', '.mil-offcanvas-btn', function (e) {
