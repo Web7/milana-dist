@@ -19732,6 +19732,12 @@ input[type="radio"], input[type="checkbox"] {
 .f-regular {
   font-family: 'montserratregular'; }
 
+.line-height-1 {
+  line-height: 1; }
+
+.f-11px {
+  font-size: 11px !important; }
+
 .f-12px {
   font-size: 12px !important; }
 
@@ -19746,6 +19752,9 @@ input[type="radio"], input[type="checkbox"] {
 
 .f-20px {
   font-size: 20px !important; }
+
+.f-25px {
+  font-size: 25px !important; }
 
 .h3 {
   font-family: 'montserratbold'; }
@@ -20631,6 +20640,59 @@ input[type="radio"], input[type="checkbox"] {
     top: -18px; }
   .catalog-title-container .btn {
     width: auto; } }
+
+.contacts-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+  text-align: left; }
+
+.contacts-phones {
+  position: relative;
+  z-index: 2; }
+
+.contacts-item {
+  background-color: #f6f6f8;
+  padding: 45px 0 45px 45px;
+  height: 100%;
+  min-height: 275px;
+  display: flex;
+  flex-direction: column; }
+
+.contacts-col {
+  padding-bottom: 70px; }
+
+@media (min-width: 992px) {
+  .contacts-image {
+    top: -212px;
+    right: -40px; } }
+
+@media (min-width: 1200px) {
+  .contacts-image {
+    top: -212px;
+    right: -40px;
+    width: 70%; } }
+
+@media (min-width: 1400px) {
+  .contacts-image {
+    top: -227px;
+    right: -40px; } }
+
+@media (min-width: 1600px) {
+  .contacts-image {
+    text-align: right; }
+  .contacts-col:nth-child(4n+1) {
+    padding-right: 76px; }
+  .contacts-col:nth-child(4n+2) {
+    padding-left: 34px;
+    padding-right: 55px; }
+  .contacts-col:nth-child(4n+3) {
+    padding-left: 55px;
+    padding-right: 34px; }
+  .contacts-col:nth-child(4n+4) {
+    padding-left: 76px; } }
 
 html {
   height: 100%; }
