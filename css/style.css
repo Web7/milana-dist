@@ -20725,11 +20725,13 @@ strong {
 .ps__rail-y {
   opacity: 1 !important; }
 
+.offcanvas-end .ps__thumb-y {
+  left: 0; }
+
 .ps__thumb-y {
   background-color: #000000;
   border-radius: 0;
   right: 0;
-  left: 0;
   margin: 0 auto;
   width: 5px; }
 
