@@ -114,55 +114,74 @@
               </ul>
             </div>
           </div>
-          <div class="personal-area-form">
-            <h2 class="f-20px f-bold text-uppercase mb-4">Настройки почтовой рассылки</h2>
-            <p class="mb-9">Подписываясь на рассылку магазина, Вы принимаете условия договора публичной оферты</p>
-            <div class="col-4 mb-9">
-              <input class="form-control bg-light" type="text" placeholder="E-mail *" aria-describedby="text1" required>
-              <div class="invalid-feedback" id="text1">Заполните поле</div>
-            </div>
-            <p class="mb-6">Выберите рассылки:</p>
-            <div class="d-flex mb-11">
-              <div class="form-check me-10">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox1" checked>
-                <label class="form-check-label" for="checkbox1">Новости и акции. Женщины</label>
+          <div class="personal-area-form mb-22">
+            <form id="form1">
+              <h2 class="f-20px f-bold text-uppercase mb-4">Настройки почтовой рассылки</h2>
+              <p class="mb-9">Подписываясь на рассылку магазина, Вы принимаете условия договора публичной оферты</p>
+              <div class="col-12 col-md-5 col-xl-4 mb-9">
+                <input class="form-control bg-light" type="text" placeholder="E-mail *" aria-describedby="text1" required>
+                <div class="invalid-feedback" id="text1">Заполните поле</div>
               </div>
-              <div class="form-check me-10">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox2">
-                <label class="form-check-label" for="checkbox2">Новости и акции. Мужчины</label>
+              <p class="mb-6">Выберите рассылки:</p>
+              <div class="container-fluid">
+                <div class="row mb-7">
+                  <div class="form-check mb-4 me-10 col-md-auto">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox1" checked>
+                    <label class="form-check-label" for="checkbox1">Новости и акции. Женщины</label>
+                  </div>
+                  <div class="form-check mb-4 me-10 col-md-auto">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+                    <label class="form-check-label" for="checkbox2">Новости и акции. Мужчины</label>
+                  </div>
+                  <div class="form-check mb-4 me-10 col-md-auto">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox3">
+                    <label class="form-check-label" for="checkbox3">Арендодатели</label>
+                  </div>
+                  <div class="form-check mb-4 me-10 col-md-auto">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox4">
+                    <label class="form-check-label" for="checkbox4">Оптовики</label>
+                  </div>
+                  <div class="form-check mb-4 col-md-auto">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox5">
+                    <label class="form-check-label" for="checkbox5">Франчайзи</label>
+                  </div>
+                </div>
               </div>
-              <div class="form-check me-10">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox3">
-                <label class="form-check-label" for="checkbox3">Арендодатели</label>
+              <div class="mb-4">
+                <button class="btn btn-black btn-sm px-15 me-md-6 mb-4 w-100 w-md-auto">Подписаться на рассылку</button>
+                <button class="btn btn-outline-black btn-sm px-9 mb-4 w-100 w-md-auto">Отменить подписку</button>
               </div>
-              <div class="form-check me-10">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox4">
-                <label class="form-check-label" for="checkbox4">Оптовики</label>
+              <div class="mb-22 col-12 col-md-7">
+                <div class="f-12px text-secondary text-justify">После добавления или изменения адреса подписки, Вам будет выслано письмо со ссылкой, для проверки e-mail'а. Подписка будет не активной до перехода по ссылке.</div>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox5">
-                <label class="form-check-label" for="checkbox5">Франчайзи</label>
+            </form>
+            <form id="form2">
+              <h2 class="f-20px f-bold text-uppercase mb-4">Настройки sms рассылки</h2>
+              <div class="col-12 col-md-7">
+                <p class="mb-9">Обратите внимание, при подписке на оповещения о статусе заказов и доставки, оповещения будут приходить на номер телефона, указанный при оформлении заказа.</p>
               </div>
-            </div>
-            <h2 class="f-20px f-bold text-uppercase mb-4">Настройки sms рассылки</h2>
-            <div class="col-7">
-              <p class="mb-9">Обратите внимание, при подписке на оповещения о статусе заказов и доставки, оповещения будут приходить на номер телефона, указанный при оформлении заказа.</p>
-            </div>
-            <div class="col-4 mb-9">
-              <input class="form-control bg-light profile-phone" type="text" placeholder="Ваш номер телефона *" data-mask="+7 (999) 999-99-99">
-              <div class="invalid-feedback" id="text2">Заполните поле</div>
-            </div>
-            <p class="mb-6">Выберите рассылки:</p>
-            <div class="d-flex mb-11">
-              <div class="form-check me-10">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox6" checked>
-                <label class="form-check-label" for="checkbox6">Новости и акции</label>
+              <div class="col-12 col-md-5 col-xl-4 mb-9">
+                <input class="form-control bg-light profile-phone" type="text" placeholder="Ваш номер телефона *" data-mask="+7 (999) 999-99-99">
+                <div class="invalid-feedback" id="text2">Заполните поле</div>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox7">
-                <label class="form-check-label" for="checkbox7">Статус заказов и доставки</label>
+              <p class="mb-6">Выберите рассылки:</p>
+              <div class="container-fluid">
+                <div class="row mb-7">
+                  <div class="form-check mb-4 me-10 col-md-auto">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox6" checked>
+                    <label class="form-check-label" for="checkbox6">Новости и акции</label>
+                  </div>
+                  <div class="form-check mb-4 col-md-auto">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox7">
+                    <label class="form-check-label" for="checkbox7">Статус заказов и доставки</label>
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="mb-4">
+                <button class="btn btn-black btn-sm px-15 me-md-6 mb-4 w-100 w-md-auto">Подписаться на рассылку</button>
+                <button class="btn btn-outline-black btn-sm px-9 mb-4 w-100 w-md-auto">Отменить подписку</button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
