@@ -18780,12 +18780,22 @@ footer {
   .off-canvas-review-edit .form-check input {
     margin-top: 6px; }
 
+.offcanvas-header {
+  padding: 20px; }
+
+.offcanvas-body {
+  padding: 20px; }
+
 .offcanvas-scroll-bar {
   position: relative;
   width: 100%;
   height: 100%; }
 
 @media (min-width: 768px) {
+  .offcanvas-header {
+    padding: 30px 55px; }
+  .offcanvas-body {
+    padding: 30px 55px; }
   .off-canvas-review-edit {
     width: 735px; }
   .off-canvas-backdrop:before {
