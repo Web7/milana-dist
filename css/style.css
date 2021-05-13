@@ -20600,6 +20600,8 @@ input[type="radio"], input[type="checkbox"] {
       font-size: 189px; }
   .personal-area-form input + .small small, .personal-area-form input + .small .small {
     width: 205px; }
+  .personal-area-form .accordion-button:after {
+    margin-right: 40px; }
   .personal-area-my-reviews .col-12:nth-last-child(-n+2) .personal-area-review-item {
     margin-bottom: 0; }
   .personal-area-my-reviews > *:nth-child(odd) {
