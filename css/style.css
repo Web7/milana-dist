@@ -20312,6 +20312,27 @@ input[type="radio"], input[type="checkbox"] {
 .page-item.disabled .i-page-next {
   background-image: url(../images/icon-page.svg#next-secondary); }
 
+.promotion-title-image {
+  height: 450px;
+  margin-left: -20px;
+  width: calc(100% + 40px);
+  background: no-repeat center center;
+  background-size: cover;
+  position: relative; }
+  .promotion-title-image > * {
+    position: absolute;
+    z-index: 2;
+    bottom: 110px; }
+  .promotion-title-image:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+
 .promotion-preview-item {
   margin-bottom: 5px; }
   .promotion-preview-item-image {
@@ -20353,6 +20374,9 @@ input[type="radio"], input[type="checkbox"] {
         margin-left: 14px; }
 
 @media (min-width: 768px) {
+  .promotion-title-image {
+    margin-left: -40px;
+    width: calc(100% + 75px); }
   .promotion-preview-item-image {
     margin-right: 5px; }
   .promotion-preview-item-text {
@@ -20362,6 +20386,9 @@ input[type="radio"], input[type="checkbox"] {
     padding: 100px 55px 100px 55px; } }
 
 @media (min-width: 992px) {
+  .promotion-title-image {
+    margin-left: -45px;
+    width: calc(100% + 85px); }
   .promotion-preview-item-image {
     margin-right: 5px; }
   .promotion-preview-item-text {
@@ -20371,6 +20398,21 @@ input[type="radio"], input[type="checkbox"] {
     padding: 110px 100px 110px 70px;
     font-size: 14px;
     margin-right: 5px; } }
+
+@media (min-width: 1200px) {
+  .promotion-title-image {
+    margin-left: -60px;
+    width: calc(100% + 100px); } }
+
+@media (min-width: 1400px) {
+  .promotion-title-image {
+    margin-left: -70px;
+    width: calc(100% + 110px); } }
+
+@media (min-width: 1600px) {
+  .promotion-title-image {
+    margin-left: -90px;
+    width: calc(100% + 130px); } }
 
 .helpful-information-or-news-item * {
   margin-bottom: 40px; }
