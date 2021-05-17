@@ -20777,6 +20777,10 @@ strong {
 .ps__rail-y {
   opacity: 1 !important; }
 
+.offcanvas-end .ps__rail-y:before {
+  left: 0;
+  margin: 0 auto; }
+
 .offcanvas-end .ps__thumb-y {
   left: 0; }
 
@@ -20787,11 +20791,32 @@ strong {
   margin: 0 auto;
   width: 5px; }
 
+.ps__rail-y:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #f6f6f8;
+  width: 5px;
+  z-index: 0; }
+
+.bg-light .ps__rail-y:before {
+  background-color: #ffffff; }
+
 .ps__rail-y:hover > .ps__thumb-y,
 .ps__rail-y:focus > .ps__thumb-y,
 .ps__rail-y.ps--clicking .ps__thumb-y {
   background-color: #000000;
   width: 100%; }
+
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-y.ps--clicking {
+  background-color: #f6f6f8; }
 
 .mil-search-input {
   padding-left: 30px;
