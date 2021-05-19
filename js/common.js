@@ -103,9 +103,13 @@
 
 	var initDropDownScrollBar = function() {
 		if (outerWidth <= 1200) {
-			for (var _dropdownScrollbar in dropdownScrollbars) {
-				console.log(_dropdownScrollbar);
-				_dropdownScrollbar.destroy();
+			if (!$.isEmptyObject(dropdownScrollbars)) {
+				for (var index in dropdownScrollbars) {
+					console.log(dropdownScrollbars[index]);
+					if (dropdownScrollbars[index]) {
+						dropdownScrollbars[index].destroy();
+					}
+				}
 			}
 			return;
 		}

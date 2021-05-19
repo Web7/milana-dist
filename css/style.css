@@ -20923,19 +20923,24 @@ input[type="radio"], input[type="checkbox"] {
     .mil-filters .dropdown-column-2 span {
       display: inline-block;
       width: 50%; }
-    .mil-filters .dropdown-column-2 .form-check-label {
-      width: 100%; }
-      .mil-filters .dropdown-column-2 .form-check-label span:last-child {
-        margin-left: -10px; }
+    .mil-filters .dropdown-column-2 .form-check {
+      margin-right: 0 !important; }
+      .mil-filters .dropdown-column-2 .form-check-label {
+        width: 100%; }
+        .mil-filters .dropdown-column-2 .form-check-label span:last-child {
+          margin-left: -10px; }
   .mil-filters .dropdown-col {
     min-width: 230px; }
+    .mil-filters .dropdown-col.w-auto {
+      min-width: auto; }
   .mil-filters .dropdown-scrollbar {
     --mil-dropdown-height: 310px;
     max-height: calc(var(--mil-dropdown-height) - 90px);
     overflow: hidden;
     position: relative; }
   .mil-filters .dropdown-title {
-    font-size: 13px; }
+    font-size: 13px;
+    margin-right: 40px; }
   .mil-filters .dropdown-toggle {
     display: flex; }
     .mil-filters .dropdown-toggle:after {
@@ -20952,7 +20957,8 @@ input[type="radio"], input[type="checkbox"] {
       transform: rotateX(180deg); }
   .mil-filters .dropdown-menu {
     font-size: inherit;
-    max-height: 400px; }
+    max-height: 400px;
+    width: max-content; }
     .mil-filters .dropdown-menu .column-block {
       margin-bottom: -20px;
       -webkit-columns: 2 180px;
@@ -20960,6 +20966,8 @@ input[type="radio"], input[type="checkbox"] {
       columns: 2 180px;
       width: 100%;
       height: 100%; }
+    .mil-filters .dropdown-menu .slider-range {
+      width: 200px; }
     .mil-filters .dropdown-menu .slider-range,
     .mil-filters .dropdown-menu .form-check {
       margin-bottom: 10px;
@@ -21021,6 +21029,10 @@ input[type="radio"], input[type="checkbox"] {
       background: url(../images/filters-arrow.svg) no-repeat 0 0;
       transform: rotate(180deg);
       margin-right: 20px; }
+    .mil-filters .dropdown-title {
+      margin-left: 20px;
+      color: #8a8a8a;
+      font-size: 14px; }
     .mil-filters .dropdown-column-2 {
       width: 100%; }
       .mil-filters .dropdown-column-2 span {
