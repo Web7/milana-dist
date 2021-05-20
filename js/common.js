@@ -20,6 +20,7 @@
 	var $offcanvasScrollBar;
 	var $navTabsPersonalArea, navTabsPersonalAreaScrollbar, navTabsPersonalAreaSlick;
 	var stickyPersonalAreaNavTabs;
+	var filtersContainerScroll;
 	var $filtersContainerScroll;
 
 	var initLeftSideMenu = function () {
@@ -93,11 +94,20 @@
 
 	var initFiltersContainerScroll = function() {
 		if (outerWidth <= 1200) {
-			$filtersContainerScroll = new PerfectScrollbar('.filters-container-scroll', {wheelPropagation: false});
+			filtersContainerScroll = new PerfectScrollbar('.filters-container-scroll', {wheelPropagation: false});
 		} else {
-			if ($filtersContainerScroll) {
-				$filtersContainerScroll.destroy();
+			if (filtersContainerScroll) {
+				filtersContainerScroll.destroy();
 			}
+		}
+	};
+
+	var updateFiltersContainerScroll = function() {
+		if ($filtersContainerScroll.exists()) {
+			$filtersContainerScroll.scrollTop(0);
+		}
+		if (filtersContainerScroll) {
+			filtersContainerScroll.update();
 		}
 	};
 
@@ -148,6 +158,7 @@
 
 		$navTabsPersonalArea = $('.nav-tabs-personal-area');
 		$dropdownScrollbar = $('.dropdown-scrollbar');
+		$filtersContainerScroll = $('.filters-container-scroll');
 
 		init();
 
@@ -261,6 +272,7 @@
 					$('.toggle-title-nav-link').text('').addClass('d-none');
 					$('.title-nav-link').removeClass('d-none');
 					$('.nav-item').not('.not-hide-nav-item').removeClass('d-none');
+					updateFiltersContainerScroll();
 				});
 			});
 
@@ -278,9 +290,7 @@
 		$this.addClass('d-none');
 		$('.toggle-title-nav-link').text($this.text()).removeClass('d-none');
 		$('.title-nav-link').addClass('d-none');
-		if ($filtersContainerScroll) {
-			$filtersContainerScroll.update();
-		}
+		updateFiltersContainerScroll();
 	});
 
 

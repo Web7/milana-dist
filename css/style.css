@@ -20959,7 +20959,7 @@ input[type="radio"], input[type="checkbox"] {
   .mil-filters .dropdown-menu {
     font-size: inherit;
     max-height: 400px;
-    width: max-content; }
+    width: 100%; }
     .mil-filters .dropdown-menu .column-block {
       margin-bottom: -20px;
       -webkit-columns: 2 180px;
@@ -20999,6 +20999,10 @@ input[type="radio"], input[type="checkbox"] {
     top: 4px;
     background-color: #f6f6f8; }
 
+@media (min-width: 768px) {
+  .mil-filters .dropdown-menu {
+    width: calc(100% + 40px); } }
+
 @media (max-width: 1200px) {
   .mil-filters {
     padding-bottom: 56px; }
@@ -21006,7 +21010,7 @@ input[type="radio"], input[type="checkbox"] {
       position: relative;
       height: calc(100vh - 125px); }
     .mil-filters .form-check {
-      padding: 0 20px;
+      padding: 0;
       font-size: 14px;
       justify-content: space-between;
       margin-right: 0 !important;
@@ -21031,7 +21035,6 @@ input[type="radio"], input[type="checkbox"] {
       transform: rotate(180deg);
       margin-right: 20px; }
     .mil-filters .dropdown-title {
-      margin-left: 20px;
       color: #8a8a8a;
       font-size: 14px; }
     .mil-filters .dropdown-column-2 {
@@ -21048,11 +21051,8 @@ input[type="radio"], input[type="checkbox"] {
       max-height: initial; }
     .mil-filters .dropdown-menu {
       padding: 0;
-      margin-left: -20px;
-      margin-right: -20px;
       max-height: initial;
-      box-shadow: none;
-      width: calc(100% + 40px); }
+      box-shadow: none; }
       .mil-filters .dropdown-menu .column-block {
         columns: 1;
         margin-bottom: 0; }
@@ -21073,7 +21073,14 @@ input[type="radio"], input[type="checkbox"] {
 @media (min-width: 768px) {
   .mil-filters {
     width: 655px;
-    left: initial; } }
+    left: initial; }
+    .mil-filters .form-check {
+      padding: 0 20px; }
+    .mil-filters .dropdown-menu {
+      margin-left: -20px;
+      margin-right: -20px; }
+    .mil-filters .dropdown-title {
+      margin-left: 20px; } }
 
 @media (min-width: 1200px) {
   .dropdown-menu-shop {
@@ -21086,8 +21093,16 @@ input[type="radio"], input[type="checkbox"] {
     position: static;
     overflow: initial;
     z-index: 1028; }
+    .mil-filters .form-check {
+      padding: 0; }
     .mil-filters .filters-container-scroll {
       width: 100%; }
+    .mil-filters .dropdown-title {
+      margin-left: 0; }
+    .mil-filters .dropdown-menu {
+      margin-left: 0;
+      margin-right: 0;
+      width: max-content; }
     .mil-filters .navbar-nav .nav-item {
       padding-left: 0;
       padding-right: 0;
