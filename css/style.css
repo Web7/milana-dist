@@ -20895,7 +20895,7 @@ input[type="radio"], input[type="checkbox"] {
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
-  z-index: 1030;
+  z-index: 1040;
   top: 0;
   left: 0;
   right: 0;
@@ -20942,20 +20942,6 @@ input[type="radio"], input[type="checkbox"] {
   .mil-filters .dropdown-title {
     font-size: 13px;
     margin-right: 40px; }
-  .mil-filters .dropdown-toggle {
-    display: flex; }
-    .mil-filters .dropdown-toggle:after {
-      display: inline-block;
-      vertical-align: 0.255em;
-      content: "";
-      width: 9px;
-      height: 9px;
-      background: url(../images/caret-filter-sprite.svg#down) no-repeat center center;
-      margin: auto 0 auto 10px;
-      transform: rotateX(0);
-      transition: transform linear 300ms; }
-    .mil-filters .dropdown-toggle.show:after {
-      transform: rotateX(180deg); }
   .mil-filters .dropdown-menu {
     font-size: inherit;
     max-height: 400px;
@@ -20976,6 +20962,21 @@ input[type="radio"], input[type="checkbox"] {
       .mil-filters .dropdown-menu .slider-range:last-child,
       .mil-filters .dropdown-menu .form-check:last-child {
         margin-bottom: 0; }
+
+.dropdown-toggle {
+  display: flex; }
+  .dropdown-toggle:after {
+    display: inline-block;
+    vertical-align: 0.255em;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: url(../images/caret-filter-sprite.svg#down) no-repeat center center;
+    margin: auto 0 auto 10px;
+    transform: rotateX(0);
+    transition: transform linear 300ms; }
+  .dropdown-toggle.show:after {
+    transform: rotateX(180deg); }
 
 .dropdown-menu {
   z-index: 1029; }
@@ -21093,8 +21094,12 @@ input[type="radio"], input[type="checkbox"] {
     position: static;
     overflow: initial;
     z-index: 1028; }
+    .mil-filters .hide-checked .form-check-input {
+      display: none; }
     .mil-filters .form-check {
       padding: 0; }
+      .mil-filters .form-check-input {
+        margin-left: 0; }
     .mil-filters .filters-container-scroll {
       width: 100%; }
     .mil-filters .dropdown-title {

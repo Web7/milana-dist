@@ -164,9 +164,15 @@
 
 		if ($navbarCatalogFilter.exists()) {
 			var navbarCatalogFilter = document.getElementById('navbarCatalogFilter');
+			var $modalBackdrop = $('<div/>', {class: 'modal-backdrop fade show'});
+			var $main = $('main');
 			navbarCatalogFilter.addEventListener('show.bs.collapse', function () {
 				initFiltersContainerScroll();
-			})
+				$main.append($modalBackdrop);
+			});
+			navbarCatalogFilter.addEventListener('hidden.bs.collapse', function() {
+				$modalBackdrop.remove();
+			});
 		}
 
 		if ($sliderRange.exists()) {
@@ -275,7 +281,6 @@
 					updateFiltersContainerScroll();
 				});
 			});
-
 		}
 	});
 
