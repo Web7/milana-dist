@@ -19057,7 +19057,8 @@ textarea.form-control-lg {
 
 header {
   z-index: 1030;
-  height: 82px; }
+  height: 82px;
+  width: 100vw; }
   header .row {
     height: 82px; }
   header .dropdown-city a {
@@ -21050,10 +21051,13 @@ input[type="radio"], input[type="checkbox"] {
       margin-left: -20px;
       margin-right: -20px;
       max-height: initial;
-      box-shadow: none; }
+      box-shadow: none;
+      width: calc(100% + 40px); }
       .mil-filters .dropdown-menu .column-block {
         columns: 1;
         margin-bottom: 0; }
+      .mil-filters .dropdown-menu .slider-range {
+        width: 100%; }
     .mil-filters .dropdown-col {
       min-width: inherit; }
     .mil-filters .dropdown-toggle {
@@ -21072,6 +21076,10 @@ input[type="radio"], input[type="checkbox"] {
     left: initial; } }
 
 @media (min-width: 1200px) {
+  .dropdown-menu-shop {
+    left: -120% !important; }
+  .dropdown-menu-other-filters {
+    left: -580% !important; }
   .mil-filters {
     width: auto;
     height: auto;
@@ -21088,6 +21096,16 @@ input[type="radio"], input[type="checkbox"] {
         font-size: 13px;
         padding-top: 0;
         padding-bottom: 0; } }
+
+@media (min-width: 1400px) {
+  .dropdown-menu-shop {
+    left: 0 !important; }
+  .dropdown-menu-other-filters {
+    left: -440% !important; } }
+
+@media (min-width: 1600px) {
+  .dropdown-menu-other-filters {
+    left: -250% !important; } }
 
 .news-preview-item {
   display: flex;
