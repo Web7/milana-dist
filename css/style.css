@@ -21039,7 +21039,8 @@ input[type="radio"], input[type="checkbox"] {
     position: relative; }
   .mil-filters .dropdown-title {
     font-size: 13px;
-    margin-right: 40px; }
+    margin-right: 40px;
+    color: #8a8a8a; }
   .mil-filters .dropdown-menu {
     font-size: inherit;
     max-height: 400px;
@@ -21090,7 +21091,8 @@ input[type="radio"], input[type="checkbox"] {
     width: 12px;
     height: 12px;
     background-color: #8c2837 !important;
-    border-color: #8c2837 !important; }
+    border-color: #8c2837 !important;
+    box-shadow: none; }
     .irs--round .irs-handle:hover {
       background-color: #8c2837; }
   .irs--round .irs-line {
@@ -21725,6 +21727,12 @@ input[type="radio"], input[type="checkbox"] {
     padding-right: 34px; }
   .contacts-col:nth-child(4n+4) {
     padding-left: 76px; } }
+
+.mil-basket-container .col-form-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'montserratbold'; }
 
 html {
   height: 100%; }

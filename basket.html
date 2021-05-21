@@ -97,29 +97,31 @@
           </ol>
         </nav>
         <h1 class="h3 text-uppercase mb-10">Корзина</h1>
-        <h2 class="h7 text-uppercase f-bold mb-12">Оформление заказа</h2>
-        <div class="row">
-          <div class="col-xxl-auto">
+        <div class="row mil-basket-container f-14px">
+          <div class="col-xxl-8">
             <div class="row">
+              <div class="col-12">
+                <h2 class="h7 text-uppercase f-bold mb-12">Оформление заказа</h2>
+              </div>
               <label class="col-lg-4 col-form-label mb-6">Мои данные</label>
-              <div class="col-lg-8 mb-6">
+              <div class="col-lg-5 mb-6">
                 <input class="form-control bg-light" type="text" placeholder="Фамилия" aria-describedby="text1" required>
                 <div class="invalid-feedback" id="text1">Заполните поле</div>
               </div>
-              <div class="col-lg-8 offset-lg-4 mb-6">
+              <div class="col-lg-5 offset-lg-4 mb-6">
                 <input class="form-control bg-light" type="text" placeholder="Имя" aria-describedby="text2" required>
                 <div class="invalid-feedback" id="text2">Заполните поле</div>
               </div>
-              <div class="col-lg-8 offset-lg-4 mb-6">
+              <div class="col-lg-5 offset-lg-4 mb-6">
                 <input class="form-control bg-light" type="text" placeholder="Отчество" aria-describedby="text3" required>
                 <div class="invalid-feedback" id="text3">Заполните поле</div>
               </div>
               <label class="col-lg-4 col-form-label mb-6">Телефон</label>
-              <div class="col-lg-8 mb-6">
+              <div class="col-lg-5 mb-6">
                 <input class="form-control bg-light profile-phone" type="text" placeholder="+7 (___) ___-__-__" data-mask="+7 (999) 999-99-99">
               </div>
               <label class="col-lg-4 col-form-label mb-6">e-mail</label>
-              <div class="col-lg-8 mb-6">
+              <div class="col-lg-5 mb-6">
                 <input class="form-control bg-light mb-2" type="text" placeholder="">
                 <div class="small">
                   <div class="form-check">
@@ -128,9 +130,59 @@
                   </div>
                 </div>
               </div>
+              <label class="col-lg-4 col-form-label mb-6">Город доставки</label>
+              <div class="col-lg-5 mb-6">
+                <input class="form-control bg-light" type="text">
+              </div>
+              <label class="col-lg-4 col-form-label mb-6">способ доставки</label>
+              <div class="col-lg-8 mb-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="" id="radio1" name="deliveryMethod" checked>
+                  <label class="form-check-label" for="radio1">Самовывоз</label>
+                </div>
+                <div class="f-13px text-dark mb-6">Вы можете самостоятельно забрать заказ из нашего магазина.</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="" id="radio2" name="deliveryMethod">
+                  <label class="form-check-label" for="radio2">Доставка курьером</label>
+                </div>
+                <div class="f-13px text-dark mb-6">Доставка осуществляется в течение дня в удобное для вас время.</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="" id="radio3" name="deliveryMethod">
+                  <label class="form-check-label" for="radio3">Почта России</label>
+                </div>
+                <div class="f-13px text-dark mb-6">Доставка осуществляется в течение дня в удобное для вас время.</div>
+              </div>
+              <label class="col-lg-4 col-form-label mb-6">пункт самовывоза</label>
+              <div class="col-lg-8 mb-6">
+                <button class="btn btn-black btn-sm" type="button">Выбрать пункт</button>
+              </div>
+              <label class="col-lg-4 col-form-label mb-6">способ оплаты</label>
+              <div class="col-lg-8 mb-6">
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" value="" id="radio4" name="paymentMethod" checked>
+                  <label class="form-check-label" for="radio4">Самовывоз</label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" value="" id="radio5" name="paymentMethod">
+                  <label class="form-check-label" for="radio5">Доставка курьером</label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" value="" id="radio6" name="paymentMethod">
+                  <label class="form-check-label" for="radio6">Почта России</label>
+                </div>
+              </div>
+              <label class="col-lg-4 col-form-label mb-6">комментарий</label>
+              <div class="col-lg-8 mb-6">
+                <textarea class="form-control bg-light" rows="8"></textarea>
+              </div>
             </div>
           </div>
-          <div class="col-xxl-auto"></div>
+          <div class="col-xxl-4">
+            <div class="bg-light pt-11 pb-15 px-18">
+              <label class="col-lg-4 col-form-label mb-6">Ваш заказ</label>
+              <div class="col-xxl-12 col-lg-8 mb-6"><a class="btn btn-primary btn-sm w-100" href="#">Оформить заказ</a></div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="mil-feedback-section text-white px-xxxl-10 px-xxl-6 px-lg-8 py-xxxl-19 py-xxl-15 py-lg-18 py-md-12 py-11 px-4">
