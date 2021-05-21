@@ -21132,8 +21132,7 @@ input[type="radio"], input[type="checkbox"] {
       width: 10px;
       height: 16px;
       left: 0;
-      background: url(../images/filters-arrow.svg) no-repeat 0 0;
-      transform: rotate(180deg);
+      background: url(../images/filters-arrow-back.svg) no-repeat 0 0;
       margin-right: 20px; }
     .mil-filters .dropdown-title {
       color: #8a8a8a;
@@ -21142,7 +21141,7 @@ input[type="radio"], input[type="checkbox"] {
       width: 100%; }
       .mil-filters .dropdown-column-2 span {
         display: inline-block;
-        margin-right: 80px;
+        margin-right: 35px;
         width: auto; }
         .mil-filters .dropdown-column-2 span:first-child {
           width: 51px; }
