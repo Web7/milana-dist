@@ -164,7 +164,7 @@
 
 		if ($navbarCatalogFilter.exists()) {
 			var navbarCatalogFilter = document.getElementById('navbarCatalogFilter');
-			var $modalBackdrop = $('<div/>', {class: 'modal-backdrop fade show'});
+			var $modalBackdrop = $('<div/>', {class: 'modal-backdrop fade show d-xl-none'});
 			var $main = $('main');
 			navbarCatalogFilter.addEventListener('show.bs.collapse', function () {
 				initFiltersContainerScroll();
