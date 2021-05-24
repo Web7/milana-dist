@@ -22,6 +22,7 @@
 	var stickyPersonalAreaNavTabs;
 	var filtersContainerScroll;
 	var $filtersContainerScroll;
+	var stickyBasket;
 
 	var initLeftSideMenu = function () {
 		var $body = $(document.body);
@@ -89,7 +90,32 @@
 		}
 
 		stickyPersonalAreaNavTabs = new Sticky('.sticky-container', options);
+	};
 
+	var initStickyBasket = function() {
+		var options = {
+			marginTop: 82
+		};
+
+		if (!$('.basket-sticky-container').exists() || outerWidth < 1400) {
+			if (stickyBasket) {
+				stickyBasket.destroy();
+			}
+			return;
+		}
+
+		if (outerWidth >= 768 && outerWidth < 1200) {
+			options.marginTop = 91;
+		}
+		if (outerWidth >= 1200) {
+			options.marginTop = 75;
+		}
+
+		if (stickyBasket) {
+			stickyBasket.destroy();
+		}
+
+		stickyBasket = new Sticky('.basket-sticky-container', options);
 	};
 
 	var initFiltersContainerScroll = function() {
@@ -126,7 +152,6 @@
 
 		if ($dropdownScrollbar.exists()) {
 			dropdownScrollbars = {};
-			console.log('init');
 			$dropdownScrollbar.each(function () {
 				var dataScrollIndex = this.getAttribute('data-scroll-index');
 				dropdownScrollbars[dataScrollIndex] = new PerfectScrollbar(this, {
@@ -142,6 +167,7 @@
 		initLeftSideMenu();
 		initNavTabsPersonalArea();
 		initStickyPersonalAreaNavTabs();
+		initStickyBasket();
 	};
 
 	$(function () {
