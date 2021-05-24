@@ -122,16 +122,22 @@
                     <div class="row">
                       <label class="col-lg-4 col-form-label mb-6">Мои данные</label>
                       <div class="col-lg-8 mb-6">
-                        <input class="form-control bg-light" type="text" placeholder="Фамилия" aria-describedby="text1" required>
-                        <div class="invalid-feedback" id="text1">Заполните поле</div>
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1 is-invalid" type="text" aria-describedby="text1" required placeholder="Фамилия">
+                          <div class="invalid-feedback order-0" id="text1">Заполните поле</div>
+                        </div>
                       </div>
                       <div class="col-lg-8 offset-lg-4 mb-6">
-                        <input class="form-control bg-light" type="text" placeholder="Имя" aria-describedby="text2" required>
-                        <div class="invalid-feedback" id="text2">Заполните поле</div>
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1" type="text" aria-describedby="text2" required placeholder="Имя">
+                          <div class="invalid-feedback order-0" id="text2">Заполните поле</div>
+                        </div>
                       </div>
                       <div class="col-lg-8 offset-lg-4 mb-6">
-                        <input class="form-control bg-light" type="text" placeholder="Отчество" aria-describedby="text3" required>
-                        <div class="invalid-feedback" id="text3">Заполните поле</div>
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1" type="text" aria-describedby="text3" required placeholder="Отчество">
+                          <div class="invalid-feedback order-0" id="text3">Заполните поле</div>
+                        </div>
                       </div>
                       <label class="col-lg-4 col-form-label mb-5">Пол</label>
                       <div class="col-lg-8 mb-5">
@@ -152,11 +158,17 @@
                       </div>
                       <label class="col-lg-4 col-form-label mb-6">Телефон</label>
                       <div class="col-lg-8 mb-6">
-                        <input class="form-control bg-light profile-phone" type="text" placeholder="+7 (___) ___-__-__" data-mask="+7 (999) 999-99-99">
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1 profile-phone" type="text" aria-describedby="text4" required data-mask="+7 (999) 999-99-99" placeholder="+7 (___) ___-__-__">
+                          <div class="invalid-feedback order-0" id="text4">Заполните поле</div>
+                        </div>
                       </div>
                       <label class="col-lg-4 col-form-label mb-6">e-mail</label>
                       <div class="col-lg-8 mb-6">
-                        <input class="form-control bg-light mb-2" type="text" placeholder="">
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1 mb-2 is-invalid" type="text" aria-describedby="text3" required>
+                          <div class="invalid-feedback order-0" id="text3">Заполните поле</div>
+                        </div>
                         <div class="small">
                           <div class="form-check">
                             <input class="form-check-mark" type="checkbox" value="" id="newsletters" checked>
@@ -166,7 +178,10 @@
                       </div>
                       <label class="col-lg-4 col-form-label mb-6">дата рождения</label>
                       <div class="col-lg-8 mb-6">
-                        <input class="form-control bg-light mb-2" type="text" placeholder="дд-мм-гггг" data-mask="99-99-9999">
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1 mb-2" type="text" aria-describedby="text5" required data-mask="99-99-9999" placeholder="дд-мм-гггг">
+                          <div class="invalid-feedback order-0" id="text5">Заполните поле</div>
+                        </div>
                         <div class="small text-secondary d-flex align-items-center"><i class="i i-gift i-secondary me-1 mb-1"></i><small>Укажи дату рождения и получай приятные бонусы к празднику.</small></div>
                       </div>
                     </div>
@@ -175,22 +190,40 @@
                     <div class="row">
                       <label class="col-lg-2 col-form-label mb-6 offset-lg-2">Адрес</label>
                       <div class="col-lg-8 mb-6">
-                        <input class="form-control bg-light" type="text" placeholder="Город">
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1" type="text" aria-describedby="text6" required placeholder="Город">
+                          <div class="invalid-feedback order-0" id="text6">Заполните поле</div>
+                        </div>
                       </div>
                       <div class="col-lg-8 offset-lg-4 mb-6">
-                        <input class="form-control bg-light" type="text" placeholder="Улица">
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1" type="text" aria-describedby="text7" required placeholder="Улица">
+                          <div class="invalid-feedback order-0" id="text7">Заполните поле</div>
+                        </div>
                       </div>
                       <div class="col-lg-8 offset-lg-4 mb-6">
-                        <input class="form-control bg-light" type="text" placeholder="Дом">
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1" type="text" aria-describedby="text8" required placeholder="Дом">
+                          <div class="invalid-feedback order-0" id="text8">Заполните поле</div>
+                        </div>
                       </div>
                       <div class="col-lg-8 offset-lg-4 mb-6">
-                        <input class="form-control bg-light" type="text" placeholder="Корпус">
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1" type="text" aria-describedby="text9" required placeholder="Корпус">
+                          <div class="invalid-feedback order-0" id="text9">Заполните поле</div>
+                        </div>
                       </div>
                       <div class="col-lg-8 offset-lg-4 mb-6">
-                        <input class="form-control bg-light" type="text" placeholder="Квартира">
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1" type="text" aria-describedby="text10" required placeholder="Квартира">
+                          <div class="invalid-feedback order-0" id="text10">Заполните поле</div>
+                        </div>
                       </div>
                       <div class="col-lg-8 offset-lg-4 mb-10">
-                        <input class="form-control bg-light" type="text" placeholder="Индекс">
+                        <div class="d-flex flex-column">
+                          <input class="form-control bg-light order-1" type="text" aria-describedby="text11" required placeholder="Индекс">
+                          <div class="invalid-feedback order-0" id="text11">Заполните поле</div>
+                        </div>
                       </div>
                       <div class="col-lg-8 offset-lg-4 mb-4">
                         <button class="btn btn-outline-black btn-sm w-100" type="button">Сменить пароль</button>
