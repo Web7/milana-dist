@@ -21295,6 +21295,8 @@ input[type="radio"], input[type="checkbox"] {
     font-size: 18px !important; }
   .f-sm-20px {
     font-size: 20px !important; }
+  .f-sm-21px {
+    font-size: 21px !important; }
   .f-sm-22px {
     font-size: 22px !important; }
   .f-sm-25px {
@@ -21319,6 +21321,8 @@ input[type="radio"], input[type="checkbox"] {
     font-size: 18px !important; }
   .f-md-20px {
     font-size: 20px !important; }
+  .f-md-21px {
+    font-size: 21px !important; }
   .f-md-22px {
     font-size: 22px !important; }
   .f-md-25px {
@@ -21343,6 +21347,8 @@ input[type="radio"], input[type="checkbox"] {
     font-size: 18px !important; }
   .f-lg-20px {
     font-size: 20px !important; }
+  .f-lg-21px {
+    font-size: 21px !important; }
   .f-lg-22px {
     font-size: 22px !important; }
   .f-lg-25px {
@@ -21367,6 +21373,8 @@ input[type="radio"], input[type="checkbox"] {
     font-size: 18px !important; }
   .f-xl-20px {
     font-size: 20px !important; }
+  .f-xl-21px {
+    font-size: 21px !important; }
   .f-xl-22px {
     font-size: 22px !important; }
   .f-xl-25px {
@@ -21391,6 +21399,8 @@ input[type="radio"], input[type="checkbox"] {
     font-size: 18px !important; }
   .f-xxl-20px {
     font-size: 20px !important; }
+  .f-xxl-21px {
+    font-size: 21px !important; }
   .f-xxl-22px {
     font-size: 22px !important; }
   .f-xxl-25px {
@@ -21415,6 +21425,8 @@ input[type="radio"], input[type="checkbox"] {
     font-size: 18px !important; }
   .f-xxxl-20px {
     font-size: 20px !important; }
+  .f-xxxl-21px {
+    font-size: 21px !important; }
   .f-xxxl-22px {
     font-size: 22px !important; }
   .f-xxxl-25px {
@@ -21446,6 +21458,9 @@ input[type="radio"], input[type="checkbox"] {
 .f-20px {
   font-size: 20px !important; }
 
+.f-21px {
+  font-size: 21px !important; }
+
 .f-22px {
   font-size: 22px !important; }
 
@@ -21472,6 +21487,8 @@ input[type="radio"], input[type="checkbox"] {
     line-height: 18px !important; }
   .lh-sm-20px {
     line-height: 20px !important; }
+  .lh-sm-21px {
+    line-height: 21px !important; }
   .lh-sm-22px {
     line-height: 22px !important; }
   .lh-sm-25px {
@@ -21496,6 +21513,8 @@ input[type="radio"], input[type="checkbox"] {
     line-height: 18px !important; }
   .lh-md-20px {
     line-height: 20px !important; }
+  .lh-md-21px {
+    line-height: 21px !important; }
   .lh-md-22px {
     line-height: 22px !important; }
   .lh-md-25px {
@@ -21520,6 +21539,8 @@ input[type="radio"], input[type="checkbox"] {
     line-height: 18px !important; }
   .lh-lg-20px {
     line-height: 20px !important; }
+  .lh-lg-21px {
+    line-height: 21px !important; }
   .lh-lg-22px {
     line-height: 22px !important; }
   .lh-lg-25px {
@@ -21544,6 +21565,8 @@ input[type="radio"], input[type="checkbox"] {
     line-height: 18px !important; }
   .lh-xl-20px {
     line-height: 20px !important; }
+  .lh-xl-21px {
+    line-height: 21px !important; }
   .lh-xl-22px {
     line-height: 22px !important; }
   .lh-xl-25px {
@@ -21568,6 +21591,8 @@ input[type="radio"], input[type="checkbox"] {
     line-height: 18px !important; }
   .lh-xxl-20px {
     line-height: 20px !important; }
+  .lh-xxl-21px {
+    line-height: 21px !important; }
   .lh-xxl-22px {
     line-height: 22px !important; }
   .lh-xxl-25px {
@@ -21592,6 +21617,8 @@ input[type="radio"], input[type="checkbox"] {
     line-height: 18px !important; }
   .lh-xxxl-20px {
     line-height: 20px !important; }
+  .lh-xxxl-21px {
+    line-height: 21px !important; }
   .lh-xxxl-22px {
     line-height: 22px !important; }
   .lh-xxxl-25px {
@@ -21622,6 +21649,9 @@ input[type="radio"], input[type="checkbox"] {
 
 .lh-20px {
   line-height: 20px !important; }
+
+.lh-21px {
+  line-height: 21px !important; }
 
 .lh-22px {
   line-height: 22px !important; }
@@ -22755,7 +22785,38 @@ input[type="radio"], input[type="checkbox"] {
   font-weight: normal;
   font-family: 'montserratbold'; }
 
+.mil-basket-product-item-img {
+  background: no-repeat center bottom;
+  background-size: contain;
+  position: relative;
+  width: 146px;
+  height: 180px; }
+  .mil-basket-product-item-img-width {
+    width: 146px; }
+  .mil-basket-product-item-img:before {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(141, 139, 143, 0.11);
+    z-index: 2; }
+
+@media (min-width: 768px) {
+  .mil-basket-product-item-img {
+    width: 130px;
+    height: 160px; }
+    .mil-basket-product-item-img-width {
+      width: 130px; } }
+
 @media (min-width: 1400px) {
+  .mil-basket-product-item-img {
+    width: 130px;
+    height: 160px; }
+    .mil-basket-product-item-img-width {
+      width: 130px; }
   .mil-basket-your-order {
     width: 340px;
     background-color: #f6f6f8; }
@@ -22927,6 +22988,9 @@ strong {
   font-size: 13px;
   padding: 13px;
   line-height: 1; }
+
+.min-width-auto {
+  min-width: auto; }
 
 .opacity-10 {
   opacity: calc(10 * 0.01); }
