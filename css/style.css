@@ -22983,6 +22983,34 @@ input[type="radio"], input[type="checkbox"] {
   .mil-basket-footer-col {
     padding-right: 467px; } }
 
+.mil-card-history {
+  min-height: 375px;
+  height: 100%;
+  background-color: #f6f6f8;
+  border-color: #ffffff;
+  padding: 55px 30px 20px 30px;
+  border-radius: 0; }
+  .mil-card-history p {
+    margin-bottom: 30px; }
+  .mil-card-history .card-title {
+    position: relative;
+    margin-bottom: 55px; }
+    .mil-card-history .card-title:after {
+      content: "";
+      width: 40px;
+      height: 7px;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      background-color: #8c2837; }
+
+@media (min-width: 768px) {
+  .mil-card-history {
+    padding: 55px 55px 20px 55px; }
+  .history-col {
+    padding: 3px; } }
+
 html {
   height: 100%; }
 
