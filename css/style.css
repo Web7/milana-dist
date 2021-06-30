@@ -22988,13 +22988,15 @@ input[type="radio"], input[type="checkbox"] {
   height: 100%;
   background-color: #f6f6f8;
   border-color: #ffffff;
-  padding: 55px 30px 20px 30px;
+  padding: 55px 25px 20px 25px;
   border-radius: 0; }
   .mil-card-history p {
     margin-bottom: 30px; }
   .mil-card-history .card-title {
     position: relative;
-    margin-bottom: 55px; }
+    margin-bottom: 55px;
+    font-size: 40px;
+    font-family: 'montserratbold'; }
     .mil-card-history .card-title:after {
       content: "";
       width: 40px;
@@ -23004,6 +23006,9 @@ input[type="radio"], input[type="checkbox"] {
       bottom: -3px;
       left: 0;
       background-color: #8c2837; }
+
+.history-col {
+  padding: 3px 0; }
 
 @media (min-width: 768px) {
   .mil-card-history {
@@ -23730,7 +23735,9 @@ a[href] .i-youtobe:hover {
   .f-sm-27px {
     font-size: 27px !important; }
   .f-sm-33px {
-    font-size: 33px !important; } }
+    font-size: 33px !important; }
+  .f-sm-40px {
+    font-size: 40px !important; } }
 
 @media (min-width: 768px) {
   .f-md-10px {
@@ -23760,7 +23767,9 @@ a[href] .i-youtobe:hover {
   .f-md-27px {
     font-size: 27px !important; }
   .f-md-33px {
-    font-size: 33px !important; } }
+    font-size: 33px !important; }
+  .f-md-40px {
+    font-size: 40px !important; } }
 
 @media (min-width: 992px) {
   .f-lg-10px {
@@ -23790,7 +23799,9 @@ a[href] .i-youtobe:hover {
   .f-lg-27px {
     font-size: 27px !important; }
   .f-lg-33px {
-    font-size: 33px !important; } }
+    font-size: 33px !important; }
+  .f-lg-40px {
+    font-size: 40px !important; } }
 
 @media (min-width: 1200px) {
   .f-xl-10px {
@@ -23820,7 +23831,9 @@ a[href] .i-youtobe:hover {
   .f-xl-27px {
     font-size: 27px !important; }
   .f-xl-33px {
-    font-size: 33px !important; } }
+    font-size: 33px !important; }
+  .f-xl-40px {
+    font-size: 40px !important; } }
 
 @media (min-width: 1400px) {
   .f-xxl-10px {
@@ -23850,7 +23863,9 @@ a[href] .i-youtobe:hover {
   .f-xxl-27px {
     font-size: 27px !important; }
   .f-xxl-33px {
-    font-size: 33px !important; } }
+    font-size: 33px !important; }
+  .f-xxl-40px {
+    font-size: 40px !important; } }
 
 @media (min-width: 1600px) {
   .f-xxxl-10px {
@@ -23880,7 +23895,9 @@ a[href] .i-youtobe:hover {
   .f-xxxl-27px {
     font-size: 27px !important; }
   .f-xxxl-33px {
-    font-size: 33px !important; } }
+    font-size: 33px !important; }
+  .f-xxxl-40px {
+    font-size: 40px !important; } }
 
 .f-10px {
   font-size: 10px !important; }
@@ -23924,6 +23941,9 @@ a[href] .i-youtobe:hover {
 .f-33px {
   font-size: 33px !important; }
 
+.f-40px {
+  font-size: 40px !important; }
+
 @media (min-width: 576px) {
   .lh-sm-10px {
     line-height: 10px !important; }
@@ -23952,7 +23972,9 @@ a[href] .i-youtobe:hover {
   .lh-sm-27px {
     line-height: 27px !important; }
   .lh-sm-33px {
-    line-height: 33px !important; } }
+    line-height: 33px !important; }
+  .lh-sm-40px {
+    line-height: 40px !important; } }
 
 @media (min-width: 768px) {
   .lh-md-10px {
@@ -23982,7 +24004,9 @@ a[href] .i-youtobe:hover {
   .lh-md-27px {
     line-height: 27px !important; }
   .lh-md-33px {
-    line-height: 33px !important; } }
+    line-height: 33px !important; }
+  .lh-md-40px {
+    line-height: 40px !important; } }
 
 @media (min-width: 992px) {
   .lh-lg-10px {
@@ -24012,7 +24036,9 @@ a[href] .i-youtobe:hover {
   .lh-lg-27px {
     line-height: 27px !important; }
   .lh-lg-33px {
-    line-height: 33px !important; } }
+    line-height: 33px !important; }
+  .lh-lg-40px {
+    line-height: 40px !important; } }
 
 @media (min-width: 1200px) {
   .lh-xl-10px {
@@ -24042,7 +24068,9 @@ a[href] .i-youtobe:hover {
   .lh-xl-27px {
     line-height: 27px !important; }
   .lh-xl-33px {
-    line-height: 33px !important; } }
+    line-height: 33px !important; }
+  .lh-xl-40px {
+    line-height: 40px !important; } }
 
 @media (min-width: 1400px) {
   .lh-xxl-10px {
@@ -24072,7 +24100,9 @@ a[href] .i-youtobe:hover {
   .lh-xxl-27px {
     line-height: 27px !important; }
   .lh-xxl-33px {
-    line-height: 33px !important; } }
+    line-height: 33px !important; }
+  .lh-xxl-40px {
+    line-height: 40px !important; } }
 
 @media (min-width: 1600px) {
   .lh-xxxl-10px {
@@ -24102,7 +24132,9 @@ a[href] .i-youtobe:hover {
   .lh-xxxl-27px {
     line-height: 27px !important; }
   .lh-xxxl-33px {
-    line-height: 33px !important; } }
+    line-height: 33px !important; }
+  .lh-xxxl-40px {
+    line-height: 40px !important; } }
 
 .lh-10px {
   line-height: 10px !important; }
@@ -24145,6 +24177,9 @@ a[href] .i-youtobe:hover {
 
 .lh-33px {
   line-height: 33px !important; }
+
+.lh-40px {
+  line-height: 40px !important; }
 
 .invalid-feedback {
   font-size: 12px; }
