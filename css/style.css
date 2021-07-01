@@ -22182,6 +22182,17 @@ input[type="radio"], input[type="checkbox"] {
       .mil-filters .dropdown-menu .form-check:last-child {
         margin-bottom: 0; }
 
+.dropdown-input {
+  width: 100%; }
+  .dropdown-input input {
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    background: #F2F2F3;
+    border: 0;
+    padding: 10px 15px;
+    outline: none; }
+
 .dropdown-toggle {
   display: flex; }
   .dropdown-toggle:after {
@@ -22224,7 +22235,7 @@ input[type="radio"], input[type="checkbox"] {
   .mil-filters .dropdown-menu {
     width: calc(100% + 40px); } }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .mil-filters {
     padding-bottom: 56px; }
     .mil-filters .filters-container-scroll {
@@ -22326,7 +22337,9 @@ input[type="radio"], input[type="checkbox"] {
     .mil-filters .dropdown-menu {
       margin-left: 0;
       margin-right: 0;
-      width: max-content; }
+      width: max-content;
+      box-shadow: 0 0 17px rgba(0, 0, 0, 0.05);
+      top: 30px; }
     .mil-filters .navbar-nav .nav-item {
       padding-left: 0;
       padding-right: 0;
@@ -23015,6 +23028,17 @@ input[type="radio"], input[type="checkbox"] {
     padding: 55px 55px 20px 55px; }
   .history-col {
     padding: 3px; } }
+
+.shops-scroll {
+  max-height: 620px;
+  margin-bottom: 165px; }
+  .shops-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: auto; }
+  .shops-scroll::-webkit-scrollbar-track {
+    background: #F6F6F8; }
+  .shops-scroll::-webkit-scrollbar-thumb {
+    background-color: #000000; }
 
 html {
   height: 100%; }
