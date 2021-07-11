@@ -211,7 +211,10 @@
               </div>
               <label class="col-md-4 col-form-label mb-6">Город доставки</label>
               <div class="col-xxxl-5 col-md-6 mb-6">
-                <input class="form-control bg-light" type="text">
+                <div class="d-flex flex-column">
+                  <input class="form-control bg-light order-1" type="text" aria-describedby="text3" required placeholder="Укажите город">
+                  <div class="invalid-feedback order-0" id="text3">Заполните поле</div>
+                </div>
               </div>
               <label class="col-md-4 col-form-label mb-6">способ доставки</label>
               <div class="col-md-8 mb-6">
@@ -231,15 +234,15 @@
                 </div>
                 <div class="f-13px text-dark mb-6">Доставка осуществляется в течение дня в удобное для вас время.</div>
               </div>
-              <div class="col-12 ps-md-1 basket-pickup-col">
+              <div class="col-12 basket-pickup-col">
                 <div class="row">
                   <label class="col-md-4 col-form-label mb-6">пункт самовывоза</label>
-                  <div class="col-md-4 mb-6 pe-md-1">
+                  <div class="col-md-3 mb-6 pe-md-1 col-xxl-4 col-xxxl-3">
                     <button class="btn btn-black btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasChooseShop" aria-controls="offcanvasChooseShop">Выбрать пункт</button>
                   </div>
                   <div class="col-md-4 mb-6 ps-md-1">
                     <p class="f-13px f-black d-flex align-items-center line-height-1 text-uppercase"><span class="me-1">выходной</span><a class="mx-1 i i-shop-info i-sm" href="#"></a><a class="ms-1 i i-shop-route i-sm" href="#"></a></p>
-                    <div class="f-13px">
+                    <div class="f-13px shop-address-minh">
                       <div class="d-flex align-items-center">
                         <svg class="me-1 mb-1" width="16" height="11" version="1.1" viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg">
                           <path fill="#943F90" d="m4.8766 9.5178h0.84617v1.417h-5.6478v-1.417h0.14169 0.84023a0.1407 0.14091 0 0 0 0.15655-0.10816q1.6329-4.139 3.2698-8.2751l0.432-1.0916 3.1588 5.5382 3.1588-5.5372 0.324 0.8157q1.6904 4.273 3.3768 8.546a0.1516 0.15183 0 0 0 0.1724 0.1161c0.28338-0.00595 0.56676 0 0.85113 0h0.11791v1.4161h-5.6478v-1.4141h0.8432l-0.82933-2.3816-2.3701 3.9009-2.3701-3.8999z"></path>
@@ -318,16 +321,16 @@
                   <label class="col-xxl-12 col-md-4 col-form-label mb-6 f-xxl-25px">Ваш заказ</label>
                   <div class="col-xxl-12 col-md-8 mb-7">
                     <div class="row mb-3">
-                      <div class="col-6 pe-1">Товар на:</div>
+                      <div class="col-6 col-md-5 pe-1">Товар на:</div>
                       <div class="col-6 ps-1">13 998 ₽</div>
-                      <div class="col-6 pe-1">Скидка:</div>
+                      <div class="col-6 col-md-5 pe-1">Скидка:</div>
                       <div class="col-6 ps-1">3 250 ₽</div>
-                      <div class="col-6 pe-1">Доставка:</div>
+                      <div class="col-6 col-md-5 pe-1">Доставка:</div>
                       <div class="col-6 ps-1">450 ₽</div>
                     </div>
                     <div class="row mb-3">
                       <div class="col-2 pe-1 f-semibold">Итого:</div>
-                      <div class="col-4 px-1 text-end f-12px">
+                      <div class="col-4 col-md-3 px-1 text-end f-12px">
                         <s>16 947</s>
                       </div>
                       <div class="col-6 ps-1 f-semibold">13 998 ₽</div>
@@ -335,7 +338,7 @@
                   </div>
                   <div class="col-xxl-12 col-md-8 offset-xxl-0 offset-md-4 mb-7 basket-pickup-col">
                     <p class="f-13px f-black d-flex align-items-center line-height-1 text-uppercase"><span class="me-1">выходной</span><a class="mx-1 i i-shop-info i-sm" href="#"></a><a class="ms-1 i i-shop-route i-sm" href="#"></a></p>
-                    <div class="f-13px">
+                    <div class="f-13px shop-address-minh">
                       <div class="d-flex align-items-center">
                         <svg class="me-1 mb-1" width="16" height="11" version="1.1" viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg">
                           <path fill="#943F90" d="m4.8766 9.5178h0.84617v1.417h-5.6478v-1.417h0.14169 0.84023a0.1407 0.14091 0 0 0 0.15655-0.10816q1.6329-4.139 3.2698-8.2751l0.432-1.0916 3.1588 5.5382 3.1588-5.5372 0.324 0.8157q1.6904 4.273 3.3768 8.546a0.1516 0.15183 0 0 0 0.1724 0.1161c0.28338-0.00595 0.56676 0 0.85113 0h0.11791v1.4161h-5.6478v-1.4141h0.8432l-0.82933-2.3816-2.3701 3.9009-2.3701-3.8999z"></path>
@@ -345,11 +348,11 @@
                   </div>
                   <div class="col-xxl-12 col-md-8 offset-xxl-0 offset-md-4 mb-9">
                     <div class="row mb-3">
-                      <div class="col-6 pe-1">Способ оплаты:</div>
+                      <div class="col-6 col-md-5 pe-1">Способ оплаты:</div>
                       <div class="col-6 ps-1 f-semibold">картой</div>
                     </div>
                     <div class="row mb-3">
-                      <div class="col-6 pe-1">Срок хранения:</div>
+                      <div class="col-6 col-md-5 pe-1">Срок хранения:</div>
                       <div class="col-6 ps-1">7 дней</div>
                     </div>
                   </div>
@@ -387,7 +390,7 @@
                   <div class="row">
                     <div class="col-md-6 col-12 mb-md-12 mb-10">
                       <p class="f-13px f-black d-flex align-items-center line-height-1 text-uppercase"><span class="me-1">Континент Дисконт</span><a class="mx-1 i i-shop-info i-sm" href="#"></a><a class="ms-1 i i-shop-route i-sm" href="#"></a></p>
-                      <div class="f-13px">
+                      <div class="f-13px shop-address-minh">
                         <div class="d-flex align-items-center">
                           <svg class="me-1 mb-1" width="16" height="11" version="1.1" viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg">
                             <path fill="#943F90" d="m4.8766 9.5178h0.84617v1.417h-5.6478v-1.417h0.14169 0.84023a0.1407 0.14091 0 0 0 0.15655-0.10816q1.6329-4.139 3.2698-8.2751l0.432-1.0916 3.1588 5.5382 3.1588-5.5372 0.324 0.8157q1.6904 4.273 3.3768 8.546a0.1516 0.15183 0 0 0 0.1724 0.1161c0.28338-0.00595 0.56676 0 0.85113 0h0.11791v1.4161h-5.6478v-1.4141h0.8432l-0.82933-2.3816-2.3701 3.9009-2.3701-3.8999z"></path>
@@ -397,7 +400,7 @@
                     </div>
                     <div class="col-md-6 col-12 mb-md-12 mb-10">
                       <p class="f-13px f-black d-flex align-items-center line-height-1 text-uppercase"><span class="me-1">Пулково Аутлет</span><a class="mx-1 i i-shop-info i-sm" href="#"></a><a class="ms-1 i i-shop-route i-sm" href="#"></a></p>
-                      <div class="f-13px">
+                      <div class="f-13px shop-address-minh">
                         <div class="d-flex align-items-center">
                           <svg class="me-1 mb-1" width="16" height="11" version="1.1" viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg">
                             <path fill="#007DCC" d="m4.8766 9.5178h0.84617v1.417h-5.6478v-1.417h0.14169 0.84023a0.1407 0.14091 0 0 0 0.15655-0.10816q1.6329-4.139 3.2698-8.2751l0.432-1.0916 3.1588 5.5382 3.1588-5.5372 0.324 0.8157q1.6904 4.273 3.3768 8.546a0.1516 0.15183 0 0 0 0.1724 0.1161c0.28338-0.00595 0.56676 0 0.85113 0h0.11791v1.4161h-5.6478v-1.4141h0.8432l-0.82933-2.3816-2.3701 3.9009-2.3701-3.8999z"></path>
@@ -407,7 +410,7 @@
                     </div>
                     <div class="col-md-6 col-12 mb-md-12 mb-10">
                       <p class="f-13px f-black d-flex align-items-center line-height-1 text-uppercase"><span class="me-1">Пулково Аутлет</span><a class="mx-1 i i-shop-info i-sm" href="#"></a><a class="ms-1 i i-shop-route i-sm" href="#"></a></p>
-                      <div class="f-13px">
+                      <div class="f-13px shop-address-minh">
                         <div class="d-flex align-items-center">
                           <svg class="me-1 mb-1" width="16" height="11" version="1.1" viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg">
                             <path fill="#007DCC" d="m4.8766 9.5178h0.84617v1.417h-5.6478v-1.417h0.14169 0.84023a0.1407 0.14091 0 0 0 0.15655-0.10816q1.6329-4.139 3.2698-8.2751l0.432-1.0916 3.1588 5.5382 3.1588-5.5372 0.324 0.8157q1.6904 4.273 3.3768 8.546a0.1516 0.15183 0 0 0 0.1724 0.1161c0.28338-0.00595 0.56676 0 0.85113 0h0.11791v1.4161h-5.6478v-1.4141h0.8432l-0.82933-2.3816-2.3701 3.9009-2.3701-3.8999z"></path>
@@ -507,7 +510,7 @@
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footerNavCollapseCompany" aria-expanded="false" aria-controls="footerNavCollapseCompany">Компания</button>
                 </div>
                 <div class="accordion-collapse collapse" id="footerNavCollapseCompany" aria-labelledby="footerNavHeadingCompany" data-bs-parent="#accordionNav">
-                  <nav class="nav flex-column"><a class="nav-link" href="#">Бренд</a><a class="nav-link" href="#">Компания</a><a class="nav-link" href="news.html">Новости</a><a class="nav-link" href="history.html">История</a><a class="nav-link" href="#">Работа</a><a class="nav-link" href="#">Медиа</a><a class="nav-link" href="contacts.html">Контакты</a></nav>
+                  <nav class="nav flex-column"><a class="nav-link" href="#">Бренд</a><a class="nav-link" href="#">Компания</a><a class="nav-link" href="news.html">Новости</a><a class="nav-link" href="history.html">История</a><a class="nav-link" href="#">Работа</a><a class="nav-link" href="media-press.html">Медиа</a><a class="nav-link" href="contacts.html">Контакты</a></nav>
                 </div>
               </div>
             </div>

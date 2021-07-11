@@ -22674,12 +22674,24 @@ input[type="radio"], input[type="checkbox"] {
     font-family: 'montserratregular';
     font-weight: normal;
     padding: 14px 20px 12px;
-    line-height: 1; }
+    line-height: 1;
+    position: relative; }
     .personal-area-form .form-control::placeholder {
       color: #afafb9;
       font-size: 14px;
       font-family: 'montserratregular';
       font-weight: normal; }
+    .personal-area-form .form-control-input:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto 0;
+      width: 25px;
+      height: 25px;
+      background: url("https://cdn0.iconfinder.com/data/icons/ThemeShock-credit-cards-icons/64/mastercard.png") no-repeat;
+      background-size: cover; }
   .personal-area-form input + .small small, .personal-area-form input + .small .small {
     font-size: 12px;
     line-height: 16px; }
@@ -22724,7 +22736,7 @@ input[type="radio"], input[type="checkbox"] {
     top: -1px;
     margin-left: 5px; }
     .personal-area-form .review-menu:before {
-      content: ". . .";
+      content: "...";
       font-family: 'montserratblack';
       font-size: 12px;
       transform: rotate(-90deg);
@@ -23031,7 +23043,8 @@ input[type="radio"], input[type="checkbox"] {
 
 .shops-scroll {
   max-height: 620px;
-  margin-bottom: 165px; }
+  margin-bottom: 165px;
+  overflow-x: hidden !important; }
   .shops-scroll::-webkit-scrollbar {
     width: 5px;
     height: auto; }
@@ -23039,6 +23052,205 @@ input[type="radio"], input[type="checkbox"] {
     background: #F6F6F8; }
   .shops-scroll::-webkit-scrollbar-thumb {
     background-color: #000000; }
+
+.shops-column-icon {
+  flex-direction: column; }
+
+.margin-shop-icon {
+  margin: 0 10px !important; }
+
+.icon-w-shop {
+  width: 85px; }
+
+.shops-mb {
+  margin-bottom: 55px; }
+
+@media (max-width: 1440px) {
+  .shops-mb {
+    margin-bottom: 145px; }
+  .shop-address-minh {
+    min-height: 115px; } }
+
+@media (max-width: 576px) {
+  .shops-scroll {
+    margin-bottom: 0px; }
+  .shops-mb {
+    margin-bottom: 0px !important; }
+  .shops-column {
+    flex-direction: column;
+    margin-bottom: 60px !important; }
+  .shops-city-mb {
+    margin-bottom: 40px; }
+  .dropdown-toggle {
+    display: inline-block; }
+  .d-none-shop-mobile {
+    display: none; }
+  .d-flex-shop-mobile {
+    display: flex; }
+  .drop-menu-shop {
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #F6F6F8; }
+  .drop-menu-shop::after {
+    position: absolute;
+    right: 2%;
+    top: 35%; }
+  .shop-mb-toggle {
+    margin-bottom: 15px; } }
+
+.mil-shop-title {
+  color: #CBCBCB !important; }
+
+.fff1 {
+  flex-direction: column; }
+
+.press-title {
+  font-family: 'montserratbold';
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .press-section {
+    position: relative;
+    margin-bottom: 220px; }
+  .press-bg-image {
+    background: url(../images/press-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 495px; }
+  .press-title {
+    color: #f6f6f8;
+    font-size: 50px;
+    position: absolute;
+    top: -27px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    right: 0; }
+  .press-content-container {
+    padding: 70px 40px;
+    position: absolute;
+    background-color: #f6f6f8;
+    top: 230px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 27px; } }
+
+@media (min-width: 992px) {
+  .press-section {
+    margin-bottom: 255px; }
+  .press-content-container {
+    padding: 90px 45px;
+    width: 785px; } }
+
+@media (min-width: 1200px) {
+  .press-section {
+    margin-bottom: 270px; } }
+
+@media (min-width: 1400px) {
+  .press-section {
+    margin-bottom: 275px; }
+  .press-bg-image {
+    height: 550px; }
+  .press-title {
+    font-size: 57px; }
+  .press-content-container {
+    padding: 75px 115px;
+    width: 925px; } }
+
+@media (min-width: 1600px) {
+  .press-section {
+    margin-bottom: 350px; }
+  .press-content-container {
+    padding: 105px 170px;
+    width: 1040px; } }
+
+.form-style-image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .form-style-image-top {
+    background-image: url(../images/form-style-image-01.png); }
+  .form-style-image-bottom {
+    background-image: url(../images/form-style-image-02.png); }
+
+.form-style-buttons {
+  height: 326px;
+  width: 621px;
+  position: absolute;
+  background-color: #ffffff; }
+
+.form-style-title {
+  max-width: 365px; }
+
+.form-style-btn {
+  background-color: #ffffff;
+  color: #8c2837;
+  border: 1.5px solid #8c2837; }
+
+.advertisment-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .advertisment-block .advertisment-card {
+    width: 451px; }
+    .advertisment-block .advertisment-card img {
+      background-size: contain;
+      width: 451px;
+      height: 227px; }
+    .advertisment-block .advertisment-card p {
+      color: #000000;
+      padding: 34px 0;
+      font-size: 28px; }
+
+@media (max-width: 1440px) {
+  .advertisment-block .advertisment-card {
+    width: 357px; }
+    .advertisment-block .advertisment-card img {
+      width: 357px; } }
+
+@media (max-width: 1280px) {
+  .advertisment-block .advertisment-card {
+    width: 451px; }
+    .advertisment-block .advertisment-card img {
+      width: 451px; } }
+
+@media (max-width: 768px) {
+  .advertisment-block .advertisment-card {
+    width: 332px; }
+    .advertisment-block .advertisment-card img {
+      width: 332px; }
+    .advertisment-block .advertisment-card p {
+      font-size: 25px; } }
+
+@media (max-width: 425px) {
+  .advertisment-block {
+    justify-content: center; } }
+
+.shop-photo-block .shop-photo-h1 {
+  font-size: 28px; }
+
+.shop-photo-block .shop-photo-data {
+  font-size: 13px; }
+
+.shop-photo-block .shop-photo-gallery img {
+  margin-right: 25px;
+  width: 162px;
+  height: 162px;
+  background-size: cover; }
+
+.shop-photo-block .shop-photo-gallery .button-yet {
+  width: 162px;
+  height: 162px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8c2837;
+  color: #ffffff;
+  cursor: pointer; }
 
 html {
   height: 100%; }
@@ -23568,6 +23780,9 @@ a[href] .i-youtobe:hover {
 
 .h3 {
   font-family: 'montserratbold'; }
+
+.h4 {
+  font-family: 'montserratextrabold'; }
 
 .h1 {
   font-size: 39px;
