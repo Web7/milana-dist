@@ -20919,6 +20919,7 @@ footer {
   .mil-product-preview-item .mil-product-preview-item-price {
     margin-bottom: 20px;
     height: 28px;
+    color: #000000;
     align-items: center; }
     .mil-product-preview-item .mil-product-preview-item-price * {
       margin-right: 15px; }
@@ -22741,7 +22742,9 @@ input[type="radio"], input[type="checkbox"] {
       font-size: 12px;
       transform: rotate(-90deg);
       display: inline-block;
-      letter-spacing: -1px; }
+      letter-spacing: 0; }
+    .personal-area-form .review-menu:after {
+      display: none !important; }
 
 .personal-area-my-reviews .col-12:nth-last-child(-n+1) .personal-area-review-item {
   margin-bottom: 0; }
